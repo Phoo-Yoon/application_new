@@ -1,0 +1,164 @@
+
+#locationPageSwiper{
+    overflow: hidden;
+    /* background-color: lightyellow; */
+}
+
+#locationPage{
+    width : 500px;
+    overflow: hidden;
+    /* background-color: lightcoral; */
+}
+#locationPageTop{
+    width : 500px;
+    overflow: hidden;
+    /* background-color: lightsteelblue; */
+    position : relative;
+}
+#locationPageTitle{
+    width : 150px;
+    height: 30px;
+    /* background-color: red; */
+    text-align: center;
+    line-height: 30px;
+    position : relative;
+    top : 30px;
+    left : 175px;
+}
+#locationBtnWrap{
+    width : 500px;
+    height: 50px;
+    /* background-color: red; */
+    position :relative;
+    margin-top: 60px;
+    /* margin-bottom : 20px; */
+}
+
+#locationAreaBtn{
+    float : left;
+    width : 200px;
+    height: 30px;
+    background-color: #88b04b;
+    position : absolute;
+    top : 0;
+    left : 14px;
+}
+#locationStoreBtn{
+    width : 200px;
+    height: 30px;
+    background-color: #88b04b;
+    position : absolute;
+    top : 0;
+    right : 14px;
+}
+#locationAreaBtn, #locationStoreBtn{
+    text-align: center;
+    line-height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#locationAreaBox, #locationStoreBox1, #locationStoreBox2{
+    width : 472px;
+    height: 60px;
+/* background-color: lightslategray; */
+    border : 2px solid #88b04b;
+    border-radius: 20px;
+    position : relative;
+    left : 14px;
+    display: none;
+}
+.areaBtn, .storeBtn{
+    width : 100px;
+    height: 30px;
+    background-color: #88b04b;
+    float : left;
+    text-align: center;
+    line-height: 30px;
+    margin-left : 24px;
+    margin-top : 15px;
+    border-radius: 20px;
+}
+#locationStoreBox1{
+    margin-bottom: 10px;
+}
+.areaBtn:first-child{
+    margin-left: 0;
+}
+.storeBtn{
+    margin-left : 43px;
+}
+
+
+/* locationPageTop End */
+
+
+#locationPageBot{
+    width : 500px;
+    overflow: hidden;
+    position : relative;
+    /* background-color: limegreen; */
+}
+
+.locationContentWrap{
+    width : 500px;
+    overflow: hidden;
+    border-bottom: 2px solid #88b04b;
+    box-sizing: border-box;
+    position : relative;
+}
+.locationContentWrap:first-child{
+    margin-top : 10px;
+}
+.locationLogo{
+    width : 130px;
+    height: 100px;
+    /* background-color: brown; */
+    position : relative;
+    left : 14px;
+    float : left;
+}
+.locationContentRight{
+    width : 342px;
+    height: 100px;
+    /* background-color: burlywood; */
+    float : right;
+    position : relative;
+    right : 14px;
+}
+#kyobo_location{
+    height: 38px;
+    position : relative;
+    top : 31px;
+}
+#bandi_location{
+    height: 28px;
+    top : 36px;
+}
+#aladin_location{
+    height: 70px;
+    top : 15px;
+}
+#yp_location{
+    height: 30px;
+    top : 35px;
+}
+#yes_location{
+    height: 70px;
+    top : 15px;
+}
+.locationContentRight img{
+    width : 20px;
+    height: 20px;
+    float : left;
+}
+.locationContentAdd, .locationContentCall, .locationContentMap{
+    height: 20px;
+    width : 342px;
+    font-size : 12px;
+    margin-bottom : 15px;
+}
+.locationContentMap{
+    margin-bottom : 0;
+    margin-top : 22px;
+}

@@ -1,0 +1,224 @@
+#loginSection{
+    width : 500px;
+    overflow: hidden;
+    /* background-color: burlywood; */
+    position : relative;
+}
+/* loginSectionEnd */
+/* background-color는 추후에 빼도록! */
+
+#loginTitle{
+    width : 500px;
+    height: 60px;
+    background-color: white;
+    font-weight: 500;
+    font-size : 25px;
+    text-align: center;
+    line-height: 60px;
+    border-bottom: 2px solid #88b04b;
+    /* border-bottom은 추후에 색상 변경 */
+    box-sizing: border-box;
+    font-weight: 900;
+}
+/* loginTitle End */
+
+#loginMain{
+    width : 500px;
+    overflow: hidden;
+    /* background-color: ; */
+    position : relative;
+}
+#loginBtnWrap{
+    width : 500px;
+    height: 80px;
+    /* background-color: lightpink; */
+    position : relative;
+}
+#biometriLogin, #IDLogin{
+    width : 150px;
+    height: 30px;
+    background-color: #88b04b;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 10px;
+}
+
+#biometriLogin{
+    position : absolute;
+    left : 50px;
+    top : 25px;    
+}
+#IDLogin{
+    position : absolute;
+    right : 50px;
+    top : 25px;
+    cursor: pointer;
+}
+
+#IDLoginWrap{
+    width : 500px;
+    height: 200px;
+    /* background-color: crimson; */
+    position : relative;
+    display: none;
+    transition-duration: 1s;
+}
+#IDLoginWrap input{
+    display: block;
+}
+.IDPWInput{
+    width : 200px;
+    height: 25px;
+    /* background-color: teal; */
+    position : absolute;
+    top : 30px;
+    left : 150px;
+    border : 1px solid #88b04b;
+    outline: none;
+}
+.IDPWInput:nth-child(2){
+    top : 70px;
+}
+#loginBtn{
+    width : 200px;
+    height: 40px;
+    background-color: #88b04b;
+    position : absolute;
+    left : 150px;
+    bottom : 45px;
+    text-align: center;
+    line-height: 40px;
+}
+/* IDLoginWrap End -> Hidden 영역. jQuery로 작동 되도록!! */
+
+#loginCheckBox{
+    width : 500px;
+    height: 30px;
+    /* background-color: red; */
+    position : relative;
+    font-size : 14px;
+    line-height: 30px;
+}
+#IDSaveBox{
+    width : 100px;
+    height: 30px;
+    float : left;
+    position : absolute;
+    left : 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.loginCheckImg{
+    float : left;
+    margin-right : 10px;
+    width : 25px;
+    height: 25px;
+}
+#loginIconCheck, #loginAutoCheck{
+    display: none;
+}
+.loginCheckTitle{
+    width : 110px;
+    height: 25px;
+    display: block;
+    cursor: pointer;
+}
+#IDAutoBox{
+    width : 100px;
+    height: 30px;
+    float : left;
+    position : absolute;
+    right : 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/* loginCheckBox End */
+
+#loginMenu{
+    width : 500px;
+    height: 50px;
+    /* background-color: violet; */
+    position : relative;
+    border-bottom : 2px solid #88b04b;
+    /* box-sizing: border-box; */
+    /* border-bottom 색상은  후에 변경 */
+}
+#loginMenuWrap{
+    width : 400px;
+    height: 50px;
+    /* background-color: teal; */
+    float : left;
+    position : relative;
+    margin-left : 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#loginMenuWrap li{
+    width : 80px;
+    height: 50px;
+    /* background-color: wheat; */
+    float : left;
+    font-size : 12px;
+    margin-left : 50px;
+    line-height: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#loginMenuWrap li:first-child{
+    margin-left : 0;
+}
+
+.loginMenuIcon{
+    float : left;
+    width : 30px;
+    height: 30px;
+}
+
+/* loginMenu End */
+
+#easyLogin{
+    width : 500px;
+    height: 200px;
+    /* background-color: turquoise; */
+}
+#easyLoginTitle{
+    width : 500px;
+    height: 60px;
+    /* background-color: white; */
+    font-weight: 500;
+    font-size : 25px;
+    text-align: center;
+    line-height: 60px;
+}
+#easyLoginIcon{
+    width : 250px;
+    height: 50px;
+    /* background-color: thistle; */
+    float : left;
+    margin-left : 125px;
+    display: flex;
+    flex-direction: row;
+    justify-content : space-between;
+}
+#easyLoginIcon li{
+    width : 50px;
+    height: 50px;
+    float : left;
+    background-color: white;
+    margin-left : 25px;
+    text-align: center;
+    line-height: 50px;
+}
+#easyLoginIcon li:first-child{
+    margin-left : 0;
+}
+/* easyLoginIcon End */

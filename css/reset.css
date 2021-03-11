@@ -1,0 +1,192 @@
+/* 전체 할당 영역 */
+*{
+    margin : 0;
+    padding : 0;
+}
+img{
+    border : 0;
+    width : 100%;
+    height: 100%;
+}
+
+ul, li{
+    list-style: none;
+}
+
+input{
+    display: none;
+}
+label{
+    display: block;
+}
+a{
+    color : black;
+    text-decoration: none;
+}
+.totalWrapper{
+    width : 2500px;
+}
+
+html {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 전체 할당 영역 End */
+header{
+    width : 500px;
+    overflow: hidden;
+    background-color: #88b04b;
+    position : relative;
+}
+/* header End */
+
+.topNav{
+    width : 500px;
+    height: 50px;
+    /* background-color: red; */
+}
+.menuBtn{
+    width : 30px;
+    height: 30px;
+    margin-left : 14px;
+    float : left;
+    margin-top : 10px;
+}
+
+/* 메뉴 이미지 넣어보고 크기 및 위치 다시 결정 */
+.logo{
+    width : 70px;
+    height: 50px;
+    margin-left : 70px;
+}
+/* 로고 이밎 넣어보고 크기 및 위치 다시결정 */
+.rightMenu{
+    position : absolute;
+    top : 0;
+    right : 14px;
+    width : 150px;
+    height: 50px;   
+}
+.darkBtn, .shopBtn, .mypageBtn{
+    width : 30px;
+    height: 30px;
+    color : white;
+    float : left;
+    position : absolute;
+    top : 10px;
+}
+.darkBtn{
+    cursor: pointer;
+}
+.darkmodeOff{
+    display: none;
+}
+
+/* 이미지 넣어보고 간격 다시 결정. */
+.shopBtn{
+    left : 60px;
+}
+.mypageBtn{
+    right : 0;
+}
+/* topNav End */
+
+.midNav{
+    width : 500px;
+    height: 50px;
+    /* background-color: plum; */
+    position : relative;
+    border-bottom : 2px solid white;
+    box-sizing: border-box;
+}
+
+.searchBar2{
+    width : 472px;
+    height: 25px;
+    position : absolute;
+    background-color: white;
+    top : 12.5px;
+    left : 14px;
+    display: block;
+    outline: none;
+    border : 2px solid #88b04b;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.searchBtn{
+    width : 60px;
+    height: 25px;
+    background-color: white;
+    position : absolute;
+    top : 14.5px;
+    right : 12px;
+    font-size : 5px;
+    color : white;
+    border-radius: 20px;
+}
+.searchMic{
+    width : 25px;
+    height: 25px;
+    /* background-color: black; */
+    float : left;
+}
+.searchBtnIcon{
+    width : 20px;
+    height: 20px;
+    /* background-color: black; */
+    float : right;
+    margin-top : 2.5px;
+    margin-right : 3px;
+}
+/* 이미지 넣은 후 크기 및 위치 결정. */
+/* midNav End */
+
+.botNav{
+    width : 500px;
+    height: 30px;
+    /* background-color: ; */
+}
+.navMenu{
+    /* background-color: black; */
+    color : white;
+    width : 340px;
+    height: 30px;
+    margin-left : 14px;
+}
+.navMenu li{ 
+    width : 68px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    float : left;
+    font-size : 12px;
+    cursor: pointer;
+}
+/* botNav End */
+/* App_Login에서는 botNav 사용 안함!! */
+#homeSwiper .botNav .navMenu li:first-child{
+    font-weight: 900;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+#bestPageSwiper .botNav .navMenu li:nth-child(2){
+    font-weight: 900;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+#newBookPageSwiper .botNav .navMenu li:nth-child(3){
+    font-weight: 900;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+#inventoryPageSwiper .botNav .navMenu li:nth-child(4){
+    font-weight: 900;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+#locationPageSwiper .botNav .navMenu li:last-child{
+    font-weight: 900;
+    text-decoration: underline;
+    text-underline-position: under;
+}

@@ -1,0 +1,219 @@
+#inventoryPageSwiper{
+    width : 500px;
+    overflow: hidden;
+    /* background-color: cadetblue; */
+}
+#inventoryPage{
+    width : 500px;
+    overflow: hidden;
+    /* background-color: burlywood; */
+    position :relative;
+}
+#inventoryTitle{
+    width : 200px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    /* background-color: red; */
+    position : relative;
+    top : 30px;
+    left : 150px;
+}
+#inventoryMenuTop{
+    width : 472px;
+    overflow: hidden;
+    /* background-color: cadetblue; */
+    position : relative;
+    left : 14px;
+    top : 60px;
+}
+#inventoryStore, #inventoryField{
+    width : 200px;
+    height: 30px;
+    background-color: #88b04b;
+    text-align: center;
+    line-height: 30px;
+    float : left;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#inventoryField{
+    float : right;
+}
+
+#inventoryStoreWrap{
+    width : 250px;
+    overflow: hidden;
+    display: none;
+    /* background-color: crimson; */
+    border : 2px solid #88b04b;
+    border-radius: 20px;
+    padding : 5px;
+}
+.inventoryBox{
+    width : 250px;
+    overflow: hidden;
+    margin-top : 10px;
+    /* background-color: beige; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom : 3px;
+    border-bottom: 2px solid #88b01b;
+}
+.inventoryBox:last-child{
+    border-bottom: 0;
+}
+.inventoryBoxLeft{
+    width : 130px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    /* background-color: cadetblue; */
+}
+.inventoryBoxRight{
+    width : 80px;
+    height: 100px;
+    /* background-color: coral; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 30px;
+}
+.seoul{
+    width : 80px;
+    height: 30px;
+    background-color:#88b04b;
+    border-radius: 20px;
+}
+.capitalArea{
+    width : 80px;
+    height: 30px;
+    background-color: #88b04b;
+    border-radius: 20px;
+}
+.sideArea{
+    width : 80px;
+    height: 30px;
+    background-color: #88b04b;
+    border-radius: 20px;
+}
+.bandiBoxLogo, .ypBoxLogo{
+    height: 28px;
+}
+.aladinBoxLogo, .yes24BoxLogo{
+    height: 70px;
+}
+.kyoboBoxLogo{
+    height: 38px;
+}
+
+
+#inventoryMenuBot{
+    width : 472px;
+    height: 30px;
+    /* background-color: darkkhaki; */
+    position : relative;
+    left : 14px;
+    top : 90px;
+}
+#inventoryMenuBot input{
+    display: block;
+}
+#inventorySearchBar{
+    float : left;
+    width : 300px;
+    height: 30px;
+    outline: none;
+    border : 1px solid #88b04b;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+#inventoryMenuBot img{
+    width : 25px;
+    height: 25px;
+    position : absolute;
+    top : 2.5px;
+    left : 270px;
+}
+#inventroySort{
+    float : right;
+    background-color: #88b04b;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 20px;
+}
+/* inventoryMenu End */
+
+#inventoryContent{
+    width : 500px;
+    overflow: hidden;
+    /* background-color: darkorchid; */
+    border-top : 2px solid #88b04b;
+    margin-top : 110px;
+    position : relative;
+}
+.inventoryBookImg{
+    width : 120px;
+    height: 160px;
+    background-color: black;
+    position : relative;
+    float : left;
+    margin : 14px;
+}
+.inventoryContentRight{
+    width : 338px;
+    overflow: hidden;
+    margin-top : 14px;
+    position : relative;
+    /* background-color: springgreen; */
+    float : right;
+}
+.inventoryBookName, .inventoryBookPrice{
+    width : 338px;
+    height: 30px;
+    /* background-color: blanchedalmond; */
+    text-align: left;
+    line-height: 30px;
+    font-weight: 900;
+}
+.inventoryLogoLoctaion img{
+    width : 130px;
+    height: 38px;
+    /* background-color: red; */
+    margin-top : 1px;
+    float : left;
+}
+.inventoryLogoLoctaion{
+    /* background-color: rosybrown; */
+    height: 40px;
+    width : 200px;
+}
+#inventoryLocationText{
+    display: block;
+    font-size : 16px;
+    /* background-color: sandybrown; */
+    text-align: center;
+    line-height: 40px;
+    font-weight: 900;
+}
+.inventoryTextWrap{
+    width : 338px;
+    overflow: hidden;
+    margin-top : 15px;
+    border : 2px solid #88b01b;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding : 5px;
+}
+.inventoryTextLeft{
+    float : left;
+    margin-right : 40px;
+    margin-left : 20px;
+}
+

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src = "js/App.js"></script>
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href = "css/App_Menu.css" rel = "stylesheet" type = "text/css">
+    <link href = "css/reset.css" rel = "stylesheet" type = "text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <title>App_MenuPage</title>
+</head>
+<body>
+    <div id = "menuPage">
+        <!-- 좌측으로 위치를 두도록!!  -->
+        <!-- absolute값과 z-index값 활용해서 메뉴 부분 가리도록!! -->
+        <!-- Swipe 해도 안나타 나도록 해야함!! -->
+        <!-- 기존의 header는 안나오도록! -->
+        <header>
+            <nav class="topNav">
+                <article class="menuBtn">
+                    <a href = "App_reset.html">
+                    <img src = "img/Icon/menuPage/closeIcon.png" alt = "menuCloseIcon">
+                </a>
+                </article>
+                <article class="logo">
+                    <a href ="App_reset.html">
+                    <img src = "img/logo/menu_logo.png" alt = "logoIcon">
+                    </a>
+                </article>
+                <div class="rightMenu">
+                    <article class="darkBtn">
+                        <img src = "img/Icon/header/darkmode_on.png" alt = "darkmodeIcon" class = "darkmodeOn">
+                        <img src = "img/Icon/header/darkmode_off.png" alt = "darkmodIcon" class = "darkmodeOff">
+                    </article>
+                    <article class="shopBtn">
+                        <a href = "#">
+                            <img src = "img/Icon/header/shoppingIcon.png" alt = "shoppingIcon">
+                        </a>                    </article>
+                    <article class="mypageBtn">
+                        <a href = "App_Login.html"><img src = "img/Icon/header/mypageIcon2.png" alt = "mypageIcon"></a> 
+                    </article>
+                </div>
+            </nav>
+            <!-- top Nav End -->
+
+            <nav class="midNav">
+                <input type = "text" placeholder="내가 읽고싶은 책을 찾아서" title= "검색어입력" class = "searchBar2">
+                    <div class="searchBtn">
+                        <article class="searchMic">
+                            <a href = "#"><img src = "img/Icon/header/voiceSearchIcon_color.png" alt = "micIcon"></a>
+                        </article>
+                        <article class="searchBtnIcon">
+                            <a href = "#"><img src = "img/Icon/header/searchIcon2.png" alt = "searchIcon"></a>
+                        </article>
+                    </div>
+            </nav>
+            <!-- mid Nav End -->
+
+           
+        </header>
+        <!-- header End -->
+            
+            <section id = "menuPageSection">
+                <ul id = "menuPageTopMenu">
+                    <li>
+                        <div class = "menuPageTopMenuImg">
+                            <a href = "#">
+                            <img src = "img/Icon/menuPage/orderIcon.png" alt = "orderIcon"></a>
+                        </div> <p class = "menuPageTopMenuText"><a href = "#">주문 / 배송</a></p>
+                    </li>
+
+                    <li>
+                        <div class = "menuPageTopMenuImg">
+                            <a href = "#">
+                            <img src = "img/Icon/menuPage/inventoryIcon.png" alt = "inventoryIcon">
+                        </a>
+                        </div> <p class = "menuPageTopMenuText">
+                            <a href = "#">재고확인</a></p>
+                    </li>
+
+                    <li>
+                        <div class = "menuPageTopMenuImg">
+                            <a href = "#">
+                            <img src = "img/Icon/menuPage/notification.png" alt = "noticeIcon">
+                        </a>
+                        </div> <p class = "menuPageTopMenuText">
+                            <a href = "#">알림</a></p>
+                    </li>
+                </ul>
+                <!-- menuPageTopMenu End -->
+
+                <article id = "menuPageCategory">
+                    <h3 class = "menuPageTitle">카테고리</h3>
+                    <div id = "menuPageCategoryWrap">
+                        <div id = "menuPageCategory1"><a href ="#">추천하는 책</a></div>
+                        <div id = "menuPageCategory2"><a href = "#">오늘의 책</a></div>
+                        <div id = "menuPageCategory3"><a href ="#">실시간 인기순위</a></div>
+                        <div id = "menuPageCategory4"><a href ="#">MD's Pick</a></div>
+                        <div id = "menuPageCategory5"><a href = "#">신간 소개</a></div>
+                    </div>
+                </article>
+                <!-- menuPageCategory End -->
+
+                <article id = "menuPageProduct">
+                    <h3 class = "menuPageTitle">최근에 본 상품</h3>
+                    <div id = "menuPageProductWrap">
+                        <ul id = "productBook">
+                            <li>
+                                <a href ="#">
+                                <img src = "img/bookCover/bookCoverRecentProduct/Recent1.jpg" alt ="productBook1">
+                            </a>
+                                <div class = "productRemove">
+                                    <img src = "img/Icon/menuPage/removeIcon.png" alt ="removeIcon">
+                                </div>
+                            </li>
+                            <li>
+                                <a href ="#">
+                                <img src = "img/bookCover/bookCoverRecentProduct/Recent2.jpg" alt ="productBook2">
+                            </a>
+                                <div class = "productRemove">
+                                    <img src = "img/Icon/menuPage/removeIcon.png" alt ="removeIcon">
+                                </div>
+                            </li>
+                            <li>
+                                <a href ="#">
+                                <img src = "img/bookCover/bookCoverRecentProduct/Recent3.jpg" alt = "productBook3">
+                            </a>
+                                <div class = "productRemove">
+                                    <img src = "img/Icon/menuPage/removeIcon.png" alt ="removeIcon">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <!-- menuPageProduct End -->
+
+                <article id = "menuPageBookStore">
+                    <h3 class = "menuPageTitle">서점 바로가기</h3>
+
+                    <div id = "menuPageBookStoreWrap">
+                        <article id = "bookStoreLeft">
+                            <div class = "menuPageBookStoreLogoWrap">
+                                <div id = "menuPageBookStoreLogo1">
+                                    <a href = "#">
+                                    <img src = "img/logo/회사 로고/logo_kyobo.png" alt="logo_kyobo">
+                                </a>
+                                </div>
+                                <div class = "menuPageBookStoreShortcuts">
+                                    <a href = "#">
+                                    <img src = "img/Icon/all/openNewWindowIcon.png" alt="openNewWindowIcon">
+                                </a>
+                                </div>
+                            </div>
+                            <div class = "menuPageBookStoreLogoWrap">
+                                <div id = "menuPageBookStoreLogo2">
+                                    <a href ="#">
+                                    <img src = "img/logo/회사 로고/aladin_logo_new.png" alt="logo_Aladin">
+                                </a>
+                                </div>
+                                <div class = "menuPageBookStoreShortcuts">
+                                    <a href = "#">
+                                    <img src = "img/Icon/all/openNewWindowIcon.png" alt="openNewWindowIcon">
+                                </a>
+                                </div>
+                            </div>
+                            <div class = "menuPageBookStoreLogoWrap">
+                                <div id = "menuPageBookStoreLogo3">
+                                    <a href ="#">
+                                    <img src = "img/logo/회사 로고/logo_yes24.png" alt="logo_yes24">
+                                </a>
+                                </div>
+                                <div class = "menuPageBookStoreShortcuts">
+                                    <a href ="#">
+                                    <img src = "img/Icon/all/openNewWindowIcon.png" alt="openNewWindowIcon">
+                                </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article id = "bookStoreRight">
+                            <div class = "menuPageBookStoreLogoWrap">
+                                <div id = "menuPageBookStoreLogo4">
+                                    <a href= "#">
+                                    <img src = "img/logo/회사 로고/bandi.png" alt ="logo_bandi">
+                                </a>
+                                </div>
+                                <div class = "menuPageBookStoreShortcuts">
+                                    <a href = "#">
+                                    <img src = "img/Icon/all/openNewWindowIcon.png" alt="openNewWindowIcon">
+                                </a>
+                                </div>
+                            </div>
+                            <div class = "menuPageBookStoreLogoWrap">
+                                <div id = "menuPageBookStoreLogo5">
+                                    <a href ="#">
+                                    <img src = "img/logo/회사 로고/yp_logo.png" alt="logo_YP">
+                                </a>
+                                </div>
+                                <div class = "menuPageBookStoreShortcuts">
+                                    <a href = "#">
+                                    <img src = "img/Icon/all/openNewWindowIcon.png" alt="openNewWindowIcon">
+                                </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- menuPageBookStore End -->
+
+                </article>
+                <!-- menuPageBookStore End -->
+            </section>
+            <!-- menuPageSection End -->
+
+            <footer id = "menuPageFooter">
+                    <div id = "customerService" class = "menuPageFooterMenu">
+                        <div class = "FooterMenuIcon">
+                            <a href = "#">
+                            <img src = "img/Icon/menuPage/serviceIcon.png" alt="serviceIcon">
+                        </a>
+                        </div> 
+                        <a href = "#">
+                        <p class = "footerMenuText">고객센터</p>
+                    </a>
+                    </div>
+                    <div id = "notice" class = "menuPageFooterMenu">
+                        <div class = "FooterMenuIcon">
+                            <a href = "#">
+                            <img src = "img/Icon/menuPage/notification.png" alt="noticeIcon">
+                        </a>
+                        </div> 
+                        <a href = "#">
+                        <p class = "footerMenuText">공지사항</p>
+                    </a>
+                    </div>
+                <!-- menuPageFooterMenu End -->
+
+            </footer>
+            <!-- menuPageFooter End -->
+
+    </div>
+    <!-- menuPage End -->
+</body>
+</html>

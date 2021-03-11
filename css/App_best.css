@@ -1,0 +1,218 @@
+#bestPageSwiper{
+    width : 500px;
+    overflow: hidden;
+}
+#bestPage{
+    width : 500px;
+    overflow: hidden;
+    position :relative;
+}
+#bestPageMenu{
+    width : 500px;
+    height: 200px;
+    /* background-color: blanchedalmond; */
+    position : relative;
+    border-bottom: 2px solid #88b04b;
+}
+#bestPageMenuTop{
+    width : 500px;
+    height: 50px;
+    /* background-color: cadetblue; */
+    position : absolute;
+    top : 30px;
+}
+.bestsellerMobileTitle{
+    width : 200px;
+    height: 50px;
+    /* background-color: coral; */
+    float : left;
+    margin-left : 14px;
+    position : relative;
+    text-align: center;
+    line-height: 50px;
+}
+.bestsellerMobileTitle:first-child{
+    margin-left : -40px;
+}
+#mobileRank{
+    float : right;
+    margin-right : 14px;
+}
+.bestsellerMobileIcon, .bestsellerMobileIcon{
+    width : 50px;
+    height: 50px;
+    position : absolute;
+    top : 0;
+    right : 0;
+}
+/* bestsellerMenuTop End */
+
+ #bestPageMenuBot{
+     width : 500px;
+     height: 100px;
+     /* background-color: black; */
+     position :relative;
+     top : 80px;
+ }
+ #MenuEtcTop{
+     width : 472px;
+     height: 30px;
+     /* background-color: cornflowerblue; */
+     position : relative;
+     margin-left : 14px;
+     top : 10px;
+ }
+ #MenuEtcTop li{
+     float : left;
+     width : 100px;
+     text-align: center;
+     line-height: 30px;
+     margin-left : 24px;
+     background-color: #88b04b;
+     border-radius: 20px;
+ }
+ #MenuEtcTop li:first-child{
+     margin-left : 0;
+ }
+#MenuEtcBot{
+    width : 472px;
+    height: 30px;
+    /* background-color: crimson; */
+    position : absolute;
+    top : 60px;
+    left : 14px;
+}
+#MenuEtcBot li{
+    width : 200px;
+    height: 30px;
+    float : left;
+    background-color: #88b04b;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 20px;
+}
+#MenuEtcBot li:last-child{
+    float : right;
+}
+
+/* bestPageMenu End */
+
+#bestPageContentWrap{
+    width : 500px;
+    overflow: hidden;
+    /* background-color: darkgray; */
+    position : relative;
+}
+#bestPageTransformBtn{
+    width : 50px;
+    height: 50px;
+    float : right;
+    cursor: pointer;
+}
+#transformIcon2{
+    display: none;
+}
+.bestPageContent{
+    margin-top : 50px;
+    width : 500px;
+    overflow: hidden;
+    position : relative;
+    /* background-color: darkorchid; */
+    border-bottom: 2px solid #88b04b;
+}
+.bestPageRank{
+    width : 30px;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+    /* background-color: white; */
+    margin-left : 14px;
+    float :left;
+}
+.bestPageContentBook{
+    width : 120px;
+    height: 160px;
+    margin : 10px;
+    margin-top : 60px;
+    /* background-color: black; */
+    float : left;
+}
+.bestPageContentInfo{
+    width : 302px;
+    /* height: 300px; */
+    overflow: hidden;
+    /* background-color: turquoise; */
+    background-color: white;
+    margin-right : 14px;
+    float : right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+.bestPageContentBookName{
+    width : 302px;
+    height: 30px;
+    /* background-color: thistle; */
+    text-align: left;
+    line-height: 30px;
+    float : left;
+    font-weight: 900;
+    font-size : 15px;
+    margin-left : 8px;
+}
+.bestPageContentStore, .bestPageContentLogo, .bestPageContentGrade{
+    float : left;
+}
+.bestPageContentStore{
+    width : 302px;
+    display: flex;
+    flex-direction: row;
+    justify-content : space-between;
+    align-items : center;
+    padding : 10px;
+    margin-left : 2px;
+}
+
+.bestPageContentLogo{
+    width : 130px;
+    margin-bottom : 10px;
+    /* background-color: tomato; */
+}
+.best_kyobo{
+    height: 38px;
+}
+.best_bandi{
+    height: 28px;
+}
+
+.best_aladin{
+    height: 70px;
+}
+
+.best_yp{
+    height: 28px;
+}
+
+.best_yes{
+    height: 70px;
+}
+.bestPageContentGrade{
+    width : 50px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    /* background-color: violet; */
+    font-size : 14px;
+}
+.bestPageContentPrice{
+    width : 70px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    /* background-color: red; */
+    font-size : 14px;
+    float : right;
+    margin-right: 20px;
+}

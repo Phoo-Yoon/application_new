@@ -1,0 +1,573 @@
+#homeSwiper{
+    width : 500px;
+    overflow: hidden;
+}
+#homeSection{
+    width : 500px;
+    overflow: hidden;
+    /* background-color: thistle;   */
+    position :relative;
+}
+.mainImgContainer{
+    width : 500px;
+    height: 345px;
+}
+.mainImg{
+    width : 500px;
+}
+.mainImgWrapper{
+    width : 1500px;
+}
+
+#realTimeSearch{
+    width : 500px;
+    height: 100px;
+    position : relative;
+    /* background-color: turquoise; */
+    border-bottom : 2px solid #88b04b;
+    box-sizing: border-box;
+}
+#realTimeSearchTitle{
+    width : 150px;
+    height: 30px;
+    float : left;
+    margin-left : 14px;
+    position : relative;
+    top : 35px;
+}
+#realTimeSearchMask{
+    width : 300px;
+    height: 30px;
+    border : 3px solid #88b04b;
+    border-radius: 40px;
+    position : absolute;
+    top : 35px;
+    right : 14px;
+    overflow: hidden;
+}
+#realTimeSearchWarp{
+    width : 300px;
+    height: 300px;
+    background-color: white;
+    position : absolute;
+    top : 0;
+}
+.realTimeSearchText{
+    width : 300px;
+    height: 30px;
+    /* background-color: tomato; */
+    border-bottom: 1px solid black;
+    padding : 5px;
+}
+.realTimeSearchText img{
+    width : 25px;
+    height: 30px;
+    margin-top : -5px;
+    float : left;
+    margin-left : 30px;
+}
+
+.liveSearchText{
+    margin-left : 65px;
+}
+/* realTimeSearch End */
+
+#recommend{
+    width : 500px;
+    overflow: hidden;
+    /* background-color: wheat; */
+    position : relative;
+}
+#recommendTitle{
+    width : 156px;
+    height: 18px;
+    margin : 14px;
+}
+#recommendInfo{
+    width : 150px;
+    height: 150px;
+    background-color: #f3faf8;
+    margin-left : 14px;
+    position : relative;
+    float : left;
+    border-radius: 20px;
+}
+#recommendIcon{
+    width : 60px;
+    height: 60px;
+    position :relative;
+    top : 15px;
+    left : 45px;
+}
+#recommendTextWrap{
+    width : 150px;
+    height: 60px;
+    /* background-color: white; */
+    display: flex;
+    flex-direction : column;
+    justify-content : space-between;
+    align-items : center;
+    position : absolute;
+    bottom : 0;
+}
+.recommendText{
+    font-size : 12px;
+    font-weight: 600;
+}
+#recommendSwiper{
+    border : 2px solid #88b04b;
+    width : 300px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom : 10px;
+}
+.recommendSlide{
+    position : relative;
+    display: flex; 
+    flex-direction : row;
+    justify-content : space-between;
+}
+.recommendPick{
+    width : 145px;
+    height: 320px;
+    float : left;
+    /* background-color: lightcoral; */
+}
+.titleBox{
+    width : 145px;
+    height: 80px;
+    background-color: white;
+    font-size : 12px;
+}
+.recommendBook{
+    width : 120px;
+    height: 160px;
+    margin-left : 10px;
+}
+.pickTitle{
+    font-size : 15px;
+    font-weight: 900;
+    padding : 3px;
+}
+.recommendBookInfo{
+    width : 145px;
+    height: 85px;
+    font-size : 12px;
+    /* background-color: lightcyan; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.recommendBookTitle{
+    height: 40px;
+    font-weight: 900;
+}
+.recommendBookGrade, .recommendBookPrice{
+    height: 20px;
+}
+.recommendBookGrade{
+    /* background-color: lightcoral; */
+    width : 145px;
+    height: 25px;
+    line-height: 25px;
+}
+.recommendBookGrade img{
+    width : 25px;
+    height: 25px;
+    float : left;
+    margin-left : 40px;
+}
+.recommendBookGrade span{
+    float : left;
+}
+/* recommendBook End */
+
+#todayBook{
+    width : 500px;
+    overflow: hidden;
+    /* background-color: royalblue; */
+    background : linear-gradient(75deg,#d1fae6, #fac6b3);
+    position : relative;
+    border-bottom : 2px solid #88b04b;
+    box-sizing: border-box;
+}
+#todayBookTitle{
+    width : 130px;
+    height: 40px;
+    margin-top : 20px;
+    position : relative;
+    margin-left : 185px;
+}
+
+.todayBookImg{
+    width : 120px;
+    height: 160px;
+    margin : 20px auto;
+}
+.todayBookInfo{
+    width : 500px;
+    /* height: 60px; */
+    overflow: hidden;
+    /* background-color: lightgoldenrodyellow; */
+}
+.todayBookName{
+    width : 500px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size : 16px;
+    /* background-color: lightgreen; */
+    font-weight: 900;
+}
+.todayBookAuthor{
+    width : 500px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size : 14px;
+    /* background-color: lightsalmon; */
+}
+.todayBookIntro{
+    width : 500px;
+    height: 50px;
+    text-align: center;
+    font-size : 14px;
+    margin-top : 10px;
+}
+/* todayBook End */
+
+#liveRank{
+    width : 500px;
+    overflow: hidden;
+    /* background-color: mediumpurple; */
+    position : relative;
+    border-bottom: 2px solid #88b04b;
+}
+#liveRankTitle{
+    width : 150px;
+    height: 30px;
+    margin-top : 20px;
+}
+
+#liveRankMenu{
+    width : 500px;
+    height: 30px;
+    /* background-color: mediumturquoise; */
+    position :relative;
+    margin-top : 20px;
+}
+#liveRankStore{
+    width : 400px;
+    height: 30px;
+    background-color: gray;
+    margin-left : 14px;
+    float : left;
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#liveRankStore li{
+    width : 80px;
+    height: 30px;
+    float : left;
+    font-size : 11px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+.on{
+    background-color: #88b04b;
+    font-weight: 900;
+}
+#liveRankMoreBtn{
+    width : 30px;
+    height: 30px;
+    float : right;
+    margin-right : 14px;
+}
+
+.liveRankSwiper{
+    /* border : 1px solid black; */
+    width : 472px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top : 20px;
+    margin-bottom : 20px;
+    background : linear-gradient(65deg,#caedae, #c5fff5);
+}
+.liveRankSlide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.liveRankBookWrap{
+    margin : 10px;
+    width : 200px;
+    overflow: hidden;
+    /* background-color: lightskyblue; */
+    float : left;
+}
+.liveRankBookImg{
+    width : 120px;
+    height: 160px;
+    /* background-color: black; */
+    margin-left : 40px;
+}
+.liveRankBookInfo{
+    width : 200px;
+    overflow: hidden;
+    /* background-color: lightseagreen; */
+    margin-top : 10px;
+    text-align: center;
+    position : relative;
+}
+.liveRankBookName{
+    width : 200px;
+    height: 30px;
+    /* background-color: lightyellow; */
+    line-height: 120%;
+    font-size : 12px;
+    font-weight: 900;
+}
+.liveRankGradePrice{
+    width : 200px;
+    height: 30px;
+    /* background-color: linen; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.liveRankGrade, .liveRankPrice{
+    width : 80px;
+    height: 30px;
+    /* background-color: blueviolet; */
+    float : left;
+    text-align: center;
+    line-height: 30px;
+    font-size : 14px;
+}
+.liveRankGrade img{
+    width : 25px;
+    height: 25px;
+    margin-top : 2.5px;
+    float : left;
+}
+.liveRankAuthor{
+    width : 200px;
+    height: 30px;
+    /* background-color: brown; */
+    text-align: center;
+    line-height: 30px;
+    font-size : 14px;
+}
+/* liveRank End */
+
+#MD{
+    width : 500px;
+    overflow: hidden;
+    /* background-color: brown; */
+    position :relative;
+    border-bottom: 2px solid #88b04b;
+}
+#MDTitle{
+    width : 150px;
+    height: 30px;
+    background-color: white;
+    margin-top :20px;
+    margin-left : 175px;
+}
+#MDMoreIcon{
+    width : 30px;
+    height: 30px;
+    float : right;
+    position : absolute;
+    top : 20px;
+    right : 14px;
+}
+
+.MDBookWrap{
+    width : 472px;
+    height: 200px;
+    /* background-color: coral; */
+    margin-bottom : 10px;
+    margin-left : 14px;
+    position : relative;
+}
+.MDBookImg{
+    width : 120px;
+    height: 160px;
+    /* background-color: black; */
+    
+    margin-top :20px;
+    float : left;
+}
+.MDBookTitle{
+    width : 200px;
+    height: 30px;
+    background-color: cornsilk;
+    position : absolute;
+    top : 20px;
+    left : 120px;
+    border-radius: 10px;
+    text-align: left;
+    line-height: 30px;
+    padding : 5px;
+    font-size : 15px;
+    font-weight: 900;
+}
+.MDBookInfo{
+    width : 350px;
+    overflow: hidden;
+    background-color: cornsilk;
+    position : absolute;
+    top : 70px;
+    left : 120px;
+    border-radius: 15px;
+    text-align: left;
+    padding : 5px;
+    font-size : 12px;
+}
+/* MD's Pick End */
+
+#homeNewBook{
+    width : 500px;
+    overflow: hidden;
+    /* background-color: crimson; */
+    position : relative;
+}
+#homeNewBookTitle{
+    width : 150px;
+    height: 30px;
+    margin-top : 20px;
+    margin-left : -20px;
+}
+#homeNewBookMoreBtn{
+    width : 30px;
+    height: 30px;
+    position : absolute;
+    right : 14px;
+    top : 20px;
+}
+.newBookContainer{
+    border : 2px solid #88b04b;
+    width : 472px;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom : 50px;
+    margin-top : 10px;
+    box-sizing: border-box;
+}
+.newBookSlide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.homeNewBookWrap{
+    width : 200px;
+    overflow: hidden;
+    /* background-color: blanchedalmond; */
+    float : left;
+    position : relative;
+    padding : 10px;
+}
+.homeNewBookImg{
+    width : 120px;
+    height: 160px;
+    background-color: black;
+    margin : 0 auto;
+}
+.homeNewBookName{
+    width : 200px;
+    height: 30px;
+    /* background-color: cornflowerblue; */
+    font-size : 13px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 30px;
+    margin-top : 10px;
+    margin-bottom : 10px;
+}
+.homeNewBookIntro{
+    width : 200px;
+    overflow: hidden;
+    /* background-color: crimson; */
+    font-size : 13px;
+    text-align: center;
+}
+/* homeNewBook End */
+
+#homeFooter{
+    width : 500px;
+    overflow: hidden;
+    background-color: gray;
+    position : relative;
+}
+#homeFooterTop, #homeFooterBot1{
+    width : 500px;
+    height: 20px;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top : 10px;
+}
+#homeFooterTop{
+    height: 40px;
+    border-bottom: 2px solid white;
+}
+#homeFooterTop li{
+    height: 40px;
+    line-height: 40px;
+}
+#homeFooterTop li, #homeFooterBot1 li{
+    width : 100px;
+    float : left;
+    /* background-color: cyan; */
+    text-align: center;
+    /* line-height: 20px; */
+    font-size : 11px;
+}
+#homeFooterTop li:first-child, #homeFooterBot1 li:first-child{
+    margin-left : 14px;
+}
+#homeFooterTop li:last-child, #homeFooterBot1 li:last-child{
+    float : right;
+    margin-right : 14px;
+}
+#homeFooterBot{
+    margin-top : 20px;
+}
+#homeFooterBot2{
+    width : 250px;
+    /* background-color: darkseagreen; */
+    height: 20px;
+    margin : 0 auto;
+    margin-top : 20px;
+}
+#homeFooterBot2 li{
+    float : left;
+    width : 100px;
+    height: 20px;
+    font-size : 11px;
+    text-align: center;
+    line-height: 20px;
+    /* background-color: white; */
+}
+#homeFooterBot2 li:last-child{
+    float : right;
+}
+/* home Footer End */
+
+#TopBtn{
+    width : 30px;
+    height: 30px;
+    border : 2px solid #88b04b;
+    background-color: white;
+    border-radius: 10px;
+    position : fixed;
+    bottom  : 5px;
+    right : 2%;
+    z-index: 9;
+    cursor: pointer;
+}

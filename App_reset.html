@@ -1,0 +1,2584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/App.js"></script>
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/App_location.css" rel="stylesheet" type="text/css">
+    <link href="css/App_inventory.css" rel="stylesheet" type="text/css">
+    <link href="css/App_new.css" rel="stylesheet" type="text/css">
+    <link href="css/App_best.css" rel="stylesheet" type="text/css">
+    <link href="css/App_home.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <title>App Reset</title>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <!-- total Page -->
+    <div class="swiper-container mainContainer">
+        <div class="swiper-wrapper totalWrapper">
+            <!-- home -->
+            <div class="swiper-slide" id="homeSwiper">
+                <!-- header -->
+                <header>
+                    <nav class="topNav">
+                        <article class="menuBtn">
+                            <a href="App_Menu.html">
+                                <img src="img/Icon/header/menuIcon.png" alt="menuIcon">
+                            </a>
+                        </article>
+                        <article class="logo">
+                            <a href="#">
+                                <img src="img/logo/menu_logo.png" alt="logoIcon">
+                            </a>
+                        </article>
+                        <div class="rightMenu">
+                            <article class="darkBtn">
+                                <img src="img/Icon/header/darkmode_on.png" alt="darkmodeIcon" class="darkmodeOn">
+                                <img src="img/Icon/header/darkmode_off.png" alt="darkmodIcon" class="darkmodeOff">
+                            </article>
+                            <article class="shopBtn">
+                                <a href="#">
+                                    <img src="img/Icon/header/shoppingIcon.png" alt="shoppingIcon">
+                                </a>
+                            </article>
+                            <article class="mypageBtn">
+                                <a href="App_Login.html"><img src="img/Icon/header/mypageIcon2.png"
+                                        alt="mypageIcon"></a>
+                            </article>
+                        </div>
+                    </nav>
+                    <!-- top Nav End -->
+
+                    <nav class="midNav">
+                        <input type="text" placeholder="내가 읽고싶은 책을 찾아서" title="검색어입력" class="searchBar2">
+                        <div class="searchBtn">
+                            <article class="searchMic">
+                                <a href="#"><img src="img/Icon/header/voiceSearchIcon_color.png" alt="micIcon"></a>
+                            </article>
+                            <article class="searchBtnIcon">
+                                <a href="#"><img src="img/Icon/header/searchIcon2.png" alt="searchIcon"></a>
+                            </article>
+                        </div>
+                    </nav>
+                    <!-- mid Nav End -->
+
+                    <nav class="botNav">
+                        <ul class="navMenu">
+                            <li>홈</li>
+                            <li>베스트</li>
+                            <li>신간</li>
+                            <li>서점별 재고</li>
+                            <li>서점 위치</li>
+                        </ul>
+                    </nav>
+                    <!-- bot Nav End -->
+                </header>
+                <!-- header End -->
+
+                <!-- homeSection  -->
+                <section id="homeSection">
+                    <div id="mainImgWrap">
+                        <!-- Swiper -->
+                        <div class="swiper-container mainImgContainer">
+                            <div class="swiper-wrapper mainImgWrapper">
+                                <div class="swiper-slide mainImg">
+                                    <a href="#"><img src="img/mianImg/mainImg1.jpg" alt="mainImg"></a>
+                                </div>
+                                <div class="swiper-slide mainImg">
+                                    <a href="#">
+                                        <img src="img/mianImg/mainImg2.jpg" alt="mainImg">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide mainImg">
+                                    <a href="#">
+                                        <img src="img/mianImg/mainImg3.jpg" alt="mainImg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Swiper JS -->
+                        <script src="../package/swiper-bundle.min.js"></script>
+
+                        <!-- Initialize Swiper -->
+                        <script>
+                            var swiper = new Swiper('.mainImgContainer');
+                        </script>
+                    </div>
+                    <!-- mainImgWrap End -->
+
+                    <div id="realTimeSearch">
+                        <div id="realTimeSearchTitle">
+                            <img src="img/title/liveRank_title.png" alt="liveRankTitle">
+                        </div>
+
+                        <div id="realTimeSearchMask">
+                            <div id="realTimeSearchWarp">
+                                <div class="realTimeSearchText"><a href="#">
+                                        <img src="img/Icon/mainPage/baseline_looks_one_black_24dp_color.png"
+                                            alt="liveSearchIcon">
+                                        <span class="liveSearchText">주식</span>
+                                    </a>
+                                </div>
+                                <div class="realTimeSearchText"><a href="#">
+                                        <img src="img/Icon/mainPage/baseline_looks_two_black_24dp_color.png"
+                                            alt="liveSearchIcon">
+                                        <span class="liveSearchText">코로나19</span>
+                                    </a>
+
+                                </div>
+                                <div class="realTimeSearchText"><a href="#">
+                                        <img src="img/Icon/mainPage/baseline_looks_3_black_24dp_color.png"
+                                            alt="liveSearchIcon">
+                                        <span class="liveSearchText">컴퓨터</span>
+                                    </a>
+
+                                </div>
+                                <div class="realTimeSearchText"><a href="#">
+                                        <img src="img/Icon/mainPage/baseline_looks_4_black_24dp_color.png"
+                                            alt="liveSearchIcon">
+                                        <span class="liveSearchText">요리</span>
+                                    </a>
+
+                                </div>
+                                <div class="realTimeSearchText"><a href="#">
+                                        <img src="img/Icon/mainPage/baseline_looks_5_black_24dp_color.png"
+                                            alt="liveSearchIcon">
+                                        <span class="liveSearchText">소설</span>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 실시간 검색어 자동으로 넘어가도록...JQuery -->
+                    </div>
+                    <!-- realTimeSearch End -->
+
+                    <div id="recommend">
+                        <div id="recommendTitle">
+                            <img src="img/title/recommend_title.png" alt="recommendTitle">
+                        </div>
+                        <!-- recommendTitle End -->
+
+                        <article id="recommendInfo">
+                            <div id="recommendIcon">
+                                <img src="img/Icon/all/bg_picks.png" alt="recommendIcon">
+                            </div>
+                            <div id="recommendTextWrap">
+                                <p class="recommendText">미래를 준비하는 부지런형</p>
+                                <p class="recommendText">선호 분야 : 컴퓨터 / IT</p>
+                                <p class="recommendText">선호 작가 : 신용권</p>
+                            </div>
+                        </article>
+                        <!-- recommendInfo End -->
+
+                        <!-- recommend Swiper -->
+                        <!-- Swiper -->
+                        <div class="swiper-container" id="recommendSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide recommendSlide">
+                                    <!-- 한 공간에 2개 -->
+                                    <article class="recommendPick">
+                                        <div class="titleBox">
+                                            <div class="pickTitle">소울메이트 픽</div>
+                                            <div class="pickInfo">나와 취향이 가장 비슷한 <br />소울메이트들이 읽고 <br />있는 책!</div>
+                                        </div>
+                                        <div class="recommendBook">
+                                            <a href="#">
+                                                <img src="img/bookCover/bookCoverRecommend/bookCoverRecommend1.jpg"
+                                                    alt="recommendBook">
+                                            </a>
+                                        </div>
+                                        <div class="recommendBookInfo">
+
+                                            <div class="recommendBookTitle">
+                                                <a href="#">러닝스쿨!한권으로 끝내는<br />HTML+CSS 웹디자인 입문</a></div>
+                                            <div class="recommendBookGrade">
+                                                <img src="img/Icon/all/grade.png" alt="gradeIcon">
+                                                <span>9.6/10</span>
+                                            </div>
+                                            <div class="recommendBookPrice">22,500원</div>
+                                        </div>
+                                    </article>
+
+                                    <article class="recommendPick">
+                                        <div class="titleBox">
+                                            <div class="pickTitle">작가 픽</div>
+                                            <div class="pickInfo">내가 좋아하는 작가와 <br />유사한 작가의 책을 <br />추천해 드립니다.</div>
+                                        </div>
+                                        <div class="recommendBook">
+                                            <a href="#">
+                                                <img src="img/bookCover/bookCoverRecommend/bookCoverRecommend2.jpg"
+                                                    alt="recommendBook">
+                                            </a>
+                                        </div>
+                                        <div class="recommendBookInfo">
+
+                                            <div class="recommendBookTitle">
+                                                <a href="#">객체지향의 사실과 오해
+                                                </a>
+                                            </div>
+                                            <div class="recommendBookGrade">
+                                                <img src="img/Icon/all/grade.png" alt="gradeIcon">
+                                                <span>9.8/10</span></div>
+                                            <div class="recommendBookPrice">18,000원</div>
+                                        </div>
+
+                                    </article>
+                                </div>
+                                <div class="swiper-slide recommendSlide">
+
+                                    <article class="recommendPick">
+                                        <div class="titleBox">
+                                            <div class="pickTitle">종합추천</div>
+                                            <div class="pickInfo">선호분야, 작가, 성향, 상품평가를 모두 종합하여 엄선한 추천 책입니다.</div>
+                                        </div>
+                                        <div class="recommendBook">
+                                            <a href="#">
+                                                <img src="img/bookCover/bookCoverRecommend/bookCoverRecommend3.jpg"
+                                                    alt="recommendBook">
+                                            </a>
+                                        </div>
+                                        <div class="recommendBookInfo">
+                                            <div class="recommendBookTitle">
+                                                <a href="#">Java의 정석</a>
+                                            </div>
+                                            <div class="recommendBookGrade">
+                                                <img src="img/Icon/all/grade.png" alt="gradeIcon">
+                                                <span>9.6/10</span>
+                                            </div>
+                                            <div class="recommendBookPrice">
+                                                27,000원
+                                            </div>
+                                        </div>
+                                    </article>
+
+                                    <article class="recommendPick">
+                                        <div class="titleBox">
+                                            <div class="pickTitle">Click 실시간 추천</div>
+                                            <div class="pickInfo">최근 본 상품과 유사한 도서를 추천해드립니다.</div>
+                                        </div>
+                                        <div class="recommendBook">
+                                            <a href="#">
+                                                <img src="img/bookCover/bookCoverRecommend/bookCoverRecommend4.jpg"
+                                                    alt="recommendBook">
+                                            </a>
+                                        </div>
+                                        <div class="recommendBookInfo">
+                                            <div class="recommendBookTitle">
+                                                <a href="#">Do it! C언어 입문</a>
+                                            </div>
+                                            <div class="recommendBookGrade">
+                                                <img src="img/Icon/all/grade.png" alt="gradeIcon">
+                                                <span>9.7/10</span>
+                                            </div>
+                                            <div class="recommendBookPrice">22,500원</div>
+                                        </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Swiper JS -->
+                        <script src="../package/swiper-bundle.min.js"></script>
+
+                        <!-- Initialize Swiper -->
+                        <script>
+                            var swiper = new Swiper('#recommendSwiper');
+                        </script>
+                        <!-- recommend Swiper End -->
+
+                    </div>
+                    <!-- recommend End -->
+
+                    <!-- todayBook -->
+                    <div id="todayBook">
+                        <!-- Swiper -->
+                        <div class="swiper-container todaySlide">
+                            <div id="todayBookTitle">
+                                <img src="img/title/today_title.png" alt="todayTitle">
+                            </div>
+                            <div class="swiper-wrapper todaySlide">
+
+                                <div class="swiper-slide todaySlide">
+                                    <div class="todayBookImg"><a href="#">
+                                            <img src="img/bookCover/bookCoverToday/today1.jpg" alt="todayBook">
+                                        </a></div>
+                                    <div class="todayBookInfo">
+                                        <div class="todayBookName"><a href="#">미국주식으로 부자되기</a></div>
+                                        <div class="todayBookAuthor">김훈(미주부) 지음 | 경향BP</div>
+                                        <div class="todayBookIntro">유튜브 6개월 만에 구독자 20만 달성!
+                                            <br /> 클래스 101 미국주식클래스 TOP 20등극
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide todaySlide">
+                                    <div class="todayBookImg"><a href="#">
+                                            <img src="img/bookCover/bookCoverToday/today2.jpg" alt="todayBook">
+                                        </a></div>
+                                    <div class="todayBookInfo">
+                                        <div class="todayBookName"><a href="#">실패를 사랑하는 직업</a></div>
+                                        <div class="todayBookAuthor">요조 지음 | 마음산책</div>
+                                        <div class="todayBookIntro">발을 헛딛고 패배해도 끝내 무언가 만든다<br />
+                                            요조가 말하는 예술가의 하루하루</div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide todaySlide">
+                                    <div class="todayBookImg"><a href="#">
+                                            <img src="img/bookCover/bookCoverToday/today3.jpg" alt="todayBook">
+                                        </a></div>
+                                    <div class="todayBookInfo">
+                                        <div class="todayBookName"><a href="#">서른이라 안 될 줄 알았어</a></div>
+                                        <div class="todayBookAuthor">변해령 지음 | 하모니북</div>
+                                        <div class="todayBookIntro">여행 금단증상으로 책을 통해 간접 경험하고 싶은 모든 이에게 추천하는 책
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide todaySlide">
+                                    <div class="todayBookImg"><a href="#">
+                                            <img src="img/bookCover/bookCoverToday/today4.jpg" alt="todayBook">
+                                        </a></div>
+                                    <div class="todayBookInfo">
+                                        <div class="todayBookName"><a href="#">그냥 좋으니까 좋아</a></div>
+                                        <div class="todayBookAuthor">조유미 지음 | 위즈덤하우스</div>
+                                        <div class="todayBookIntro">150만 독자가 사랑한 작가 『나, 있는 그대로 참 좋다』 조유미 신작!<br />
+                                            “애쓰지 않고, 마음 가는 대로… 오늘은 그냥 좋은 일만 해보기”</div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide todaySlide">
+                                    <div class="todayBookImg"><a href="#">
+                                            <img src="img/bookCover/bookCoverToday/today5.jpg" alt="todayBook">
+                                        </a></div>
+                                    <div class="todayBookInfo">
+                                        <div class="todayBookName"><a href="#">열두 살의 모자이크</a></div>
+                                        <div class="todayBookAuthor">황선미 지음(남수 그림) | 창비</div>
+                                        <div class="todayBookIntro">새로운 주인공을 통해<br />
+                                            우리가 살아가는 오늘의 현실에 질문을 던진다</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next todaySwiperBtn_next"></div>
+                            <div class="swiper-button-prev todaySwiperBtn_prev"></div>
+                        </div>
+
+                        <!-- Swiper JS -->
+                        <script src="../package/swiper-bundle.min.js"></script>
+
+                        <!-- Initialize Swiper -->
+                        <script>
+                            var swiper = new Swiper('.todaySlide', {
+                                navigation: {
+                                    nextEl: '.swiper-button-next ',
+                                    prevEl: '.swiper-button-prev ',
+                                },
+                            });
+                        </script>
+                    </div>
+                    <!-- todayBook End -->
+
+                    <!-- liveRank -->
+                    <div id="liveRank">
+                        <article id="liveRankTitle">
+                            <img src="img/title/liveRank_title.png" alt="liveRankTitle">
+                        </article>
+
+                        <article id="liveRankMenu">
+                            <ul id="liveRankStore">
+                                <!-- pointer로 마우스 포인터 변경하고 클릭시 변경되는거는 JQuery에서 -->
+                                <li class="on">교보문고</li>
+                                <li>반디앤루니스</li>
+                                <li>알라딘</li>
+                                <li>영풍문고</li>
+                                <li>Yes24</li>
+                            </ul>
+                            <div id="liveRankMoreBtn"><a href="#">
+                                    <img src="img/Icon/all/openNewWindowIcon.png" alt="moreBtn">
+                                </a></div>
+                        </article>
+
+                        <!-- Swiper -->
+                        <!-- 5개 영역이필요함. 중복되는 거 확인 필수! JQuery 작업할 때 확인하기 -->
+                        <!-- 교보문고 영역 -->
+                        <div class="swiper-container liveRankSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide liveRankSlide">
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/kyobo/kyobo_LiveRank1.jpg"
+                                                    alt="liveRankKoyho">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">주린이가 가장 알고 싶은 최다질문<br /> TOP77</a>
+                                            </div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.7/10
+                                                </div>
+                                                <div class="liveRankPrice">16,200원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">염승환 저 | 메이트북스</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/kyobo/kyobo_LiveRank2.jpg"
+                                                    alt="liveRankKoyho">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">달러구트 꿈 백화점</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">
+                                                    9.2/10
+                                                </div>
+                                                <div class="liveRankPrice">12,420원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">이미예 저 | 팩토리나인</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide liveRankSlide">
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/kyobo/kyobo_LiveRank3.jpg"
+                                                    alt="liveRankKoyho">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">2030 축의 전환</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">8.6/10
+                                                </div>
+                                                <div class="liveRankPrice">16,200원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">마우로 기옌 저 | 리더스북</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/kyobo/kyobo_LiveRank4.jpg"
+                                                    alt="liveRankKoyho">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">공정하다는 착각</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.0/10
+                                                </div>
+                                                <div class="liveRankPrice">16,200원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">마이클 샌델 저 | 와이즈베리</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide liveRankSlide">
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/kyobo/kyobo_LiveRank5.jpg"
+                                                    alt="liveRankKoyho">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">주식투자 무작정 따라하기(2020)</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.1/10
+                                                </div>
+                                                <div class="liveRankPrice">16,200원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">윤재수 저 | 길벗</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/kyobo/kyobo_LiveRank6.jpg"
+                                                    alt="liveRankKoyho">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">돈의 시나리오</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.5/10
+                                                </div>
+                                                <div class="liveRankPrice">15,300원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">김종봉,제갈현열 저 | 다산북스</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide liveRankSlide">
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/kyobo/kyobo_LiveRank7.jpg"
+                                                    alt="liveRankKoyho">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">해커스 토익 기출 보카<br />TOEIC VOCA</a>
+                                            </div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.6/10
+                                                </div>
+                                                <div class="liveRankPrice">11,610원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">David Cho 저 | 해커스어학연구소</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/kyobo/kyobo_LiveRank8.jpg"
+                                                    alt="liveRankKoyho">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">트렌드 코리아 2021</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">8.7/10
+                                                </div>
+                                                <div class="liveRankPrice">16,200원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">김난도 외 8명 저 | 미래의창</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide liveRankSlide">
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/kyobo/kyobo_LiveRank9.jpg"
+                                                    alt="liveRankKoyho">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">아몬드</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.3/10
+                                                </div>
+                                                <div class="liveRankPrice">10,800원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">손원평 저 | 창비</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/kyobo/kyobo_LiveRank10.jpg"
+                                                    alt="liveRankKoyho"> </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">모래알만 한 진실이라도</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.0/10
+                                                </div>
+                                                <div class="liveRankPrice">14,400원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">박완서 저 | 세계사</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 교보문고 영역 End -->
+
+                        <!-- 반디앤루니스 영역 -->
+                        <div class="swiper-container liveRankSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide liveRankSlide">
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src= "img/bookCover/bookCoverLiveRank/Bandi_Lunis/bandi_liveRank1.jpg"
+                                                    alt="liveRankBandi">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">주린이가 가장 알고 싶은 최다질문<br/> TOP77</a>
+                                            </div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.5/10
+                                                </div>
+                                                <div class="liveRankPrice">16,200원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">염승환 저 | 메이트북스</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/Bandi_Lunis/bandi_liveRank2.jpg"
+                                                    alt="liveRankBandi">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">달러구트 꿈 백화점</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">
+                                                    9.7/10
+                                                </div>
+                                                <div class="liveRankPrice">12,420원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">이미예 저 | 팩토리나인</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide liveRankSlide">
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/Bandi_Lunis/bandi_liveRank3.jpg"
+                                                    alt="liveRankBandi">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">어떻게 말해줘야 할까</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">10/10
+                                                </div>
+                                                <div class="liveRankPrice">15,750원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">오은영 외 1명 저 | 김영사</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/Bandi_Lunis/bandi_liveRank4.jpg"
+                                                    alt="liveRankBandi">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">파친코1</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">8.0/10
+                                                </div>
+                                                <div class="liveRankPrice">13,050원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">이민진 저 | 문학사상</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide liveRankSlide">
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src= "img/bookCover/bookCoverLiveRank/Bandi_Lunis/bandi_liveRank5.jpg"
+                                                    alt="liveRankBandi">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">파친코2</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">10/10
+                                                </div>
+                                                <div class="liveRankPrice">13,050원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">이민진 저 | 문학사상</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/Bandi_Lunis/bandi_liveRank6.jpg"
+                                                    alt="liveRankBandi">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">2030 축의 전환</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.0/10
+                                                </div>
+                                                <div class="liveRankPrice">16,200원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">마우로 기옌 저 | 리더스북</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide liveRankSlide">
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/Bandi_Lunis/bandi_liveRank7.jpg"
+                                                    alt="liveRankBandi">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">주린이도 술술 읽는 친절한 주식책</a>
+                                            </div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.6/10
+                                                </div>
+                                                <div class="liveRankPrice">13,500원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">최정희 외 1명 저 | 메이트북스</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/Bandi_Lunis/bandi_liveRank8.jpg"
+                                                    alt="liveRankBandi">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">주식투자 무작정 따라하기</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.5/10
+                                                </div>
+                                                <div class="liveRankPrice">16,200원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">윤재수 저 | 길벗</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide liveRankSlide">
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/Bandi_Lunis/bandi_liveRank9.jpg"
+                                                    alt="liveRankBandi">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">공정하다는 착각</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.2/10
+                                                </div>
+                                                <div class="liveRankPrice">16,200원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">마이클 샌델 저 | 와이즈베리</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/Bandi_Lunis/bandi_liveRank10.jpg"
+                                                    alt="liveRankBandi"> </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">트렌드 코리아 2021</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.4/10
+                                                </div>
+                                                <div class="liveRankPrice">16,200원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">김난도 외 8명 저 | 미래의창</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 반디앤루니스 영역 End -->
+
+                        <!-- 알라딘 영역 -->
+                        <div class="swiper-container liveRankSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide liveRankSlide">
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/aladin/aladin_LiveRank1.jpg"
+                                                    alt="liveRankaladin">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">주린이가 가장 알고 싶은 최다질문<br/> TOP77</a>
+                                            </div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.3/10
+                                                </div>
+                                                <div class="liveRankPrice">16,200원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">염승환 저 | 메이트북스</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/aladin/aladin_LiveRank2.jpg"
+                                                    alt="liveRankaladin">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">2030 축의 전환</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">
+                                                    9.1/10
+                                                </div>
+                                                <div class="liveRankPrice">16,200원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">마우로 기옌 저 | 리더스북</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide liveRankSlide">
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/aladin/aladin_LiveRank3.jpg"
+                                                    alt="liveRankaladin">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">달러구트 꿈 백화점</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">8.6/10
+                                                </div>
+                                                <div class="liveRankPrice">12,400원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">이미예 저 | 팩토리나인</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/aladin/aladin_LiveRank4.jpg"
+                                                    alt="liveRankaladin">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">어린이라는 세계</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.7/10
+                                                </div>
+                                                <div class="liveRankPrice">13,500원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">김소영 저 | 사계절</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide liveRankSlide">
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src= "img/bookCover/bookCoverLiveRank/aladin/aladin_LiveRank5.jpg"
+                                                    alt="liveRankaladin">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">파친코</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.3/10
+                                                </div>
+                                                <div class="liveRankPrice">13,050원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">이민진 저 | 문학사상</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/aladin/aladin_LiveRank6.jpg"
+                                                    alt="liveRankaladin">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">애린 왕자</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.8/10
+                                                </div>
+                                                <div class="liveRankPrice">8,910원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">앙투안 드 생텍쥐페리 저 | 이팝</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide liveRankSlide">
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/aladin/aladin_LiveRank7.jpg"
+                                                    alt="liveRankaladin">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">파친코 2</a>
+                                            </div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">8.0/10
+                                                </div>
+                                                <div class="liveRankPrice">13,050원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">이민진 저 | 문학사상</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/aladin/aladin_LiveRank8.jpg"
+                                                    alt="liveRankaladin">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">모래알만 한 진실이라도</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.8/10
+                                                </div>
+                                                <div class="liveRankPrice">14,400원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">박완서 저 | 세계사</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide liveRankSlide">
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src= "img/bookCover/bookCoverLiveRank/aladin/aladin_LiveRank9.jpg"
+                                                    alt="liveRankaladin">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">귀멸의 칼날 22</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.8/10
+                                                </div>
+                                                <div class="liveRankPrice">4,500원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">고토게 코요하루 저 | 학산문화사</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src= "img/bookCover/bookCoverLiveRank/aladin/aladin_LiveRank10.jpg"
+                                                    alt="liveRankaladin"> </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">별★별 한국사 기출 500제 <br/>한국사능력검정시험 심화(1.2.3급)</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">10/10
+                                                </div>
+                                                <div class="liveRankPrice">17,100원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">최태성 저 | 이투스북</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 알라딘 영역 End -->
+
+                        <!-- 영풍문고 영역 -->
+                        <div class="swiper-container liveRankSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide liveRankSlide">
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/ypbooks/yp_liveRank1.jpg"
+                                                    alt="liveRankYP">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">달러구트 꿈 백화점</a>
+                                            </div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.7/10
+                                                </div>
+                                                <div class="liveRankPrice">12,420원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">이미예 저 | 팩토리나인</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/ypbooks/yp_liveRank2.jpg"
+                                                    alt="liveRankYP">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">주린이가 가장 알고 싶은 최다질문<br/>TOP 77</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">
+                                                    9.4/10
+                                                </div>
+                                                <div class="liveRankPrice">16,200원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">염승환 저 | 메이트북스</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide liveRankSlide">
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/ypbooks/yp_liveRank3.jpg"
+                                                    alt="liveRankYP">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">2030 축의 전환</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">8.8/10
+                                                </div>
+                                                <div class="liveRankPrice">16,200원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">마우로 기옌 저 | 리더스북</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/ypbooks/yp_liveRank4.jpg"
+                                                    alt="liveRankYP">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">주식투자 무작정 따라하기</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.2/10
+                                                </div>
+                                                <div class="liveRankPrice">16,200원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">윤재수 저 | 길벗</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide liveRankSlide">
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/ypbooks/yp_liveRank5.jpg"
+                                                    alt="liveRankYP">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">주식투자 무작정 따라하기(2020)</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.8/10
+                                                </div>
+                                                <div class="liveRankPrice">16,200원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">김난도 외 8명 저 | 미래의창</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/ypbooks/yp_liveRank6.jpg"
+                                                    alt="liveRankYP">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">아몬드</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.9/10
+                                                </div>
+                                                <div class="liveRankPrice">10,800원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">손원평 저 | 창비</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide liveRankSlide">
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/ypbooks/yp_liveRank7.jpg"
+                                                    alt="liveRankYP">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">흔한남매 별난 방탈출 1</a>
+                                            </div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">8.8/10
+                                                </div>
+                                                <div class="liveRankPrice">10,800원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">김언정 저 | 아이세움</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/ypbooks/yp_liveRank8.jpg"
+                                                    alt="liveRankYP">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">주린이도 술술 읽는 친절한 주식책</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.0/10
+                                                </div>
+                                                <div class="liveRankPrice">13,500원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">최정희 외 1명 저 | 메이트북스</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide liveRankSlide">
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/ypbooks/yp_liveRank9.jpg"
+                                                    alt="liveRankYP">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">어떻게 말해줘야 할까</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">10/10
+                                                </div>
+                                                <div class="liveRankPrice">15,750원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">오은영 저 | 김영사</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/ypbooks/yp_liveRank10.jpg"
+                                                    alt="liveRankYP"> </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">공정하다는 착각</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">8.7/10
+                                                </div>
+                                                <div class="liveRankPrice">16,200원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">마이클 샌델 저 | 와이즈베리</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 영풍문고 영역 End -->
+
+                        <!-- Yes24 영역 -->
+                        <div class="swiper-container liveRankSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide liveRankSlide">
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/yes24/yes_LiveRank1.jpg"
+                                                    alt="liveRankYes">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">주린이가 가장 알고 싶은 최다질문<br/> TOP77</a>
+                                            </div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.6/10
+                                                </div>
+                                                <div class="liveRankPrice">16,200원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">염승환 저 | 메이트북스</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/yes24/yes_LiveRank2.jpg"
+                                                    alt="liveRankYes">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">달러구트 꿈 백화점</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">
+                                                    9.3/10
+                                                </div>
+                                                <div class="liveRankPrice">12,420원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">이미예 저 | 팩토리나인</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide liveRankSlide">
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/yes24/yes_LiveRank3.jpg"
+                                                    alt="liveRankYes">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">2030 축의 전환</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.3/10
+                                                </div>
+                                                <div class="liveRankPrice">16,200원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">마우로 기옌 저 | 리더스북</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/yes24/yes_liveRank4.jpg"
+                                                    alt="liveRankYes">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">어떻게 말해줘야 할까</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.8/10
+                                                </div>
+                                                <div class="liveRankPrice">15,750원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">오은영 저 | 김영사</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide liveRankSlide">
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/yes24/yes_LiveRank5.jpg"
+                                                    alt="liveRankYes">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">모래알만 한 진실이라도</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.8/10
+                                                </div>
+                                                <div class="liveRankPrice">14,400원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">박완서 저 | 세계사</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/yes24/yes_LiveRank6.jpg"
+                                                    alt="liveRankYes">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">돈의 시나리오</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.5/10
+                                                </div>
+                                                <div class="liveRankPrice">15,300원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">김종봉,제갈현열 저 | 다산북스</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide liveRankSlide">
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/yes24/yes_LiveRank7.jpg"
+                                                    alt="liveRankYes">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">파친코 1</a>
+                                            </div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">8.9/10
+                                                </div>
+                                                <div class="liveRankPrice">13,050원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">이민진 저 | 문학사상</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/yes24/yes_LiveRank8.jpg"
+                                                    alt="liveRankYes">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">어린이라는 세계</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.8/10
+                                                </div>
+                                                <div class="liveRankPrice">13,500원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">김소영 저 | 사계절</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide liveRankSlide">
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/yes24/yes_LiveRank9.jpg"
+                                                    alt="liveRankYes">
+                                            </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">해커스 토익 기출 보카<br />TOEIC VOCA</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.4/10
+                                                </div>
+                                                <div class="liveRankPrice">11,610원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">David Cho 저 | 해커스어학연구소</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="liveRankBookWrap">
+                                        <div class="liveRankBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverLiveRank/yes24/yes_LiveRank10.jpg"
+                                                    alt="liveRankYes"> </a></div>
+                                        <div class="liveRankBookInfo">
+                                            <div class="liveRankBookName"><a href="#">파친코 2</a></div>
+                                            <div class="liveRankGradePrice">
+                                                <div class="liveRankGrade">
+                                                    <img src="img/Icon/all/grade.png" alt="liveRankGradeIcon">9.2/10
+                                                </div>
+                                                <div class="liveRankPrice">13,050원</div>
+                                            </div>
+                                            <div class="liveRankAuthor">이민진 저 | 문학사상</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Yes24영역 End -->
+
+                        <!-- Swiper JS -->
+                        <script src="../package/swiper-bundle.min.js"></script>
+
+                        <!-- Initialize Swiper -->
+                        <script>
+                            var swiper = new Swiper('.liveRankSwiper');
+                        </script>
+                    </div>
+                    <!-- liveRank End -->
+
+                    <!-- MD's Pick -->
+                    <div id="MD">
+                        <!-- Swiper -->
+                        <div class="swiper-container MDContainer">
+                            <div id="MDTitle">
+                                <img src="img/title/MD'sPick_title.png" alt="MDTitle">
+                            </div>
+
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide MDSlide">
+                                    <div class="MDBookWrap">
+                                        <article class="MDBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverMD'sPick/pick1.png" alt="MDBook">
+                                            </a></article>
+                                        <article class="MDBookTitle"><a href="#">하루 한 장 마음챙김</a></article>
+                                        <article class="MDBookInfo"><a href="#">
+                                                세계적인 심리 치료 전문가 루이스 헤이의 마지막 기획작!<br />30년간 전 세계 5천만 명의 삶을 바꾼 루이스 헤이의
+                                                긍정확언<br />
+                                                베스트 컬렉션을 만나다!<br />뉴에이지의 여왕, 자기 치유의 아이콘, 미러 워크의 선구자, <br />세계적 영적 지도자등
+                                                루이스 헤이를 수식하는 이름은 끝이...
+                                            </a></article>
+                                    </div>
+
+                                    <div class="MDBookWrap">
+                                        <article class="MDBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverMD'sPick/pick2.jpg" alt="MDBook">
+                                            </a></article>
+                                        <article class="MDBookTitle"><a href="#">쌀,재난,국가</a></article>
+                                        <article class="MDBookInfo"><a href="#">
+                                                청년 실업과 비정규직 차별, 학벌주의, 연공서열과 여성 배제의 <br />구조, 부동산 문제까지 한국 사회의 불평등 구조를
+                                                이해하는
+                                                <br />세 가지 키워드 쌀/재난/국가<br /> 2019년 한국사회에
+                                                세대론과 불평등에 관한 새로운 시각을 제시했다는 평을 받으며 언론과 학계, 정계, 일반 대중에게까지...
+                                            </a></article>
+                                    </div>
+
+                                    <div class="MDBookWrap">
+                                        <article class="MDBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverMD'sPick/pick3.jpg" alt="MDBook">
+                                            </a></article>
+                                        <article class="MDBookTitle"><a href="#">눈보라</a></article>
+                                        <article class="MDBookInfo"><a href="#">
+                                                얼어붙은 마음을 녹이는 강력한 목소리
+                                                볼로냐 라가치 상 수상 작가 강경수 신작
+                                                『거짓말 같은 이야기』 『꽃을 선물할게』 ‘코드네임’ 시리즈 등을 펴내며 수많은 어린이
+                                                독자를 사로잡은 매력적인 이야기꾼 강경수의 신작 그림책이 출간되었다. 일상의 한 조각을 통해 삶의 진실을 숙고하게
+                                                하고 세상을 새롭게 보게 하는 힘을...
+                                            </a></article>
+                                    </div>
+
+                                    <div class="MDBookWrap">
+                                        <article class="MDBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverMD'sPick/pick4.jpg" alt="MDBook">
+                                            </a></article>
+                                        <article class="MDBookTitle"><a href="#">잃어버린 단어들의 사전</a></article>
+                                        <article class="MDBookInfo"><a href="#">
+                                                정혜윤, 이다혜, 요조 강력 추천!
+                                                자신의 언어로 말하고, 정의하고, 호명하는 여성들의 이야기
+                                                실제 『옥스퍼드 영어 사전』의 편찬 역사를 바탕으로, ‘영어의 규범’이라고
+                                                할 만한 이 사전을 만든 남성 편집자들의 역사에서 시선을 돌려, 사전의 권위에서 누락된
+                                                여성들의 언어와 사전을 만드는 데 기여한 다양한 여성들을 조명한다.
+                                            </a></article>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="MDBookWrap">
+                                        <article class="MDBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverMD'sPick/pick5.jpg" alt="MDBook">
+                                            </a></article>
+                                        <article class="MDBookTitle"><a href="#">신, 만들어진 위험</a></article>
+                                        <article class="MDBookInfo"><a href="#">
+                                                신은 없고 비이성적 믿음만 남은 세상을 위한 12가지 해독제
+                                                이 책은 ‘종교 바이러스’를 저지할 ‘이성’이란 백신이다!
+                                                신과 인간 사이 가장 뜨거운 논쟁의 중심에 선 세계적 석학,
+                                                다윈 이후 가장 위대한 생물학자 리처드 도킨스. 그가 인류를 위협하는 비합리적
+                                                믿음의 실체를 과학적으로 낱낱이 파헤친 새로운 이야기로...
+                                            </a></article>
+                                    </div>
+
+                                    <div class="MDBookWrap">
+                                        <article class="MDBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverMD'sPick/pick6.jpg" alt="MDBook">
+                                            </a></article>
+                                        <article class="MDBookTitle"><a href="#">내 안에서 나를 만드는 것들</a></article>
+                                        <article class="MDBookInfo"><a href="#">
+                                                《국부론》의 저자 애덤 스미스가 평생을 걸쳐 완성한 역작
+                                                《국부론》의 저자이자 ‘자본주의 아버지’라 불리는 애덤 스미스는
+                                                일찍이 ‘더 나은 삶을 이루고 싶어 하는’ 인간의 본성을 알아차렸다.
+                                                그는 더 나은 삶, 잘 되는 나를 만들기 위해 가장 중요한 것으로
+                                                자기 자신을 아는 것을 꼽았다. 그리고 이에 대한 주옥같은...
+                                            </a></article>
+                                    </div>
+
+                                    <div class="MDBookWrap">
+                                        <article class="MDBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverMD'sPick/pick7.jpg" alt="MDBook">
+                                            </a></article>
+                                        <article class="MDBookTitle"><a href="#">돈의 심리학</a></article>
+                                        <article class="MDBookInfo"><a href="#">
+                                                가장 크게 성공한 투자자 vs. 가장 크게 파산한 투자자
+                                                무엇이 이 둘의 운명을 갈랐는가
+                                                『돈의 심리학』은 월스트리트저널에서 10년 넘게 금융과 투자에
+                                                대한 글을 써온 칼럼니스트이자 콜라보레이티브 펀드 파트너로 활동중인
+                                                모건 하우절의 첫 책이다. 총 20개 스토리로 구성되어 있다.
+                                            </a></article>
+                                    </div>
+
+                                    <div class="MDBookWrap">
+                                        <article class="MDBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverMD'sPick/pick8.jpg" alt="MDBook">
+                                            </a></article>
+                                        <article class="MDBookTitle"><a href="#">다툼이 상처로 남지 않으려면</a></article>
+                                        <article class="MDBookInfo"><a href="#">
+                                                책『다툼이 상처로 남지 않으려면』은 연애의 겉면과 이면, 연애의 시작과 끝,
+                                                그 이후까지 연애의 모든 것을 다루고 있다. 연애의 예쁜 면만이 아닌, 연애가
+                                                안 좋게 끝나는 이유들을 자세히 짚어 보면서 '내면까지 아름답고, 오래도록 지속되는
+                                                연애'에 관한 조언을 담고 있다.
+                                            </a></article>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="MDBookWrap">
+                                        <article class="MDBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverMD'sPick/pick9.jpg" alt="MDBook">
+                                            </a></article>
+                                        <article class="MDBookTitle"><a href="#">나는 나로 살기로 했다</a></article>
+                                        <article class="MDBookInfo"><a href="#">
+                                                진짜 ‘나’로 살기 위한 뜨거운 조언들! 어른이 처음인 당신을 위한 단단한 위로들!
+                                                “어른이 되어보니 세상은 냉담한 곳이었다.” 김수현은 책을 펴내면서 이런 말을 했다.
+                                                부조리가 넘쳐났고, 사람들은 불필요할 정도로 서로에게 선을 긋고, 평범한 이들조차
+                                                기회가 있으면 차별과 멸시를 즐긴다.
+                                            </a></article>
+                                    </div>
+
+                                    <div class="MDBookWrap">
+                                        <article class="MDBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverMD'sPick/pick10.jpg" alt="MDBook">
+                                            </a></article>
+                                        <article class="MDBookTitle"><a href="#">시티 오브 걸스</a></article>
+                                        <article class="MDBookInfo"><a href="#">
+                                                아마존 올해의 책, 〈뉴욕 타임스〉 베스트셀러!
+                                                《먹고 기도하고 사랑하라》에서 한 걸음 더 나아간 화제작
+                                                엘리자베스 길버트의 더 과감하고, 더 강렬하고, 더 거대한 사랑 이야기
+                                                30여 개 언어로 번역되어 1,000만 부 이상의 판매고를 기록한 전 세계적인
+                                                베스트셀러 《먹고 기도하고 사랑하라》의 저자 엘리자베스 길버트가 《시티 오브 걸스》로 돌아왔다.
+                                            </a></article>
+                                    </div>
+
+                                    <div class="MDBookWrap">
+                                        <article class="MDBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverMD'sPick/pick11.jpg" alt="MDBook">
+                                            </a></article>
+                                        <article class="MDBookTitle"><a href="#">달러구트 꿈 백화점</a></article>
+                                        <article class="MDBookInfo"><a href="#">
+                                                잠들어야만 입장 가능한 꿈 백화점에서 일어나는
+                                                비밀스럽고도 기묘하며 가슴 뭉클한 판타지 소설
+                                                여기는 잠들어야만 입장할 수 있는 ‘달러구트 꿈 백화점’입니다.
+                                                잠들어야만 입장할 수 있는 독특한 마을. 그곳에 들어온 잠든 손님들에게
+                                                가장 인기 있는 곳은, 온갖 꿈을 한데 모아 판매하는 ‘달러구트의
+                                                꿈 백화점’이다.
+                                            </a></article>
+                                    </div>
+
+                                    <div class="MDBookWrap">
+                                        <article class="MDBookImg"><a href="#">
+                                                <img src="img/bookCover/bookCoverMD'sPick/pick12.jpg" alt="MDBook">
+                                            </a></article>
+                                        <article class="MDBookTitle"><a href="#">지쳤거나 좋아하는 게 없거나</a></article>
+                                        <article class="MDBookInfo"><a href="#">
+                                                내가 만족하는 것이 무엇인지 알아가고 찾아갈 때 행복할 수 있다!
+                                                무기력해진 마음에 다시 시작하고 싶은 의욕과 용기를 불러일으켜 주고,
+                                                잃어버린 삶의 의욕을 다시 찾을 수 있도록 도와주는 글배우의 이야기
+                                                『지쳤거나 좋아하는 게 없거나』. 무기력해진 나에게 혼자의
+                                                시간을 잘 보내며 재충전할 수 있는 방법과...
+                                            </a></article>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                        <!-- Swiper JS -->
+                        <script src="../package/swiper-bundle.min.js"></script>
+
+                        <!-- Initialize Swiper -->
+                        <script>
+                            var swiper = new Swiper('.MDContainer', {
+                                pagination: {
+                                    el: '.swiper-pagination',
+                                },
+                            });
+                        </script>
+                    </div>
+                    <!-- MD's Pick End -->
+
+                    <!-- homeNewBook -->
+                    <div id="homeNewBook">
+                        <article id="homeNewBookTitle">
+                            <img src="img/title/new_title.png" alt="newTitle">
+                        </article>
+                        <article id="homeNewBookMoreBtn"><a href="#">
+                                <img src="img/Icon/all/openNewWindowIcon.png" alt="newBookMoreIcon">
+                            </a></article>
+
+                        <!-- Swiper -->
+                        <div class="swiper-container newBookContainer">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide newBookSlide">
+
+                                    <article class="homeNewBookWrap">
+                                        <div class="homeNewBookImg">
+                                            <a href="#">
+                                                <img src="img/bookCover/bookCoverNew/new1.jpg" alt="newBook">
+                                            </a>
+                                        </div>
+                                        <div class="homeNewBookInfo">
+                                            <div class="homeNewBookName"><a href="#">조선 금수저의 슬기로운 일상탐닉</a></div>
+                                            <div class="homeNewBookIntro">
+                                                안나미 저 | 의미와재미<br />21년 01월 30일 출간
+                                            </div>
+                                        </div>
+                                    </article>
+
+                                    <article class="homeNewBookWrap">
+                                        <div class="homeNewBookImg">
+                                            <a href="#">
+                                                <img src="img/bookCover/bookCoverNew/new2.jpg" alt="newBook">
+                                            </a>
+                                        </div>
+                                        <div class="homeNewBookInfo">
+                                            <div class="homeNewBookName"><a href="#">리얼리티 버블</a></div>
+                                            <div class="homeNewBookIntro">
+                                                지야 통 저 | 코쿤북스<br />21년 01월 25일 출간
+                                            </div>
+                                        </div>
+                                    </article>
+
+                                </div>
+
+                                <div class="swiper-slide newBookSlide">
+
+                                    <article class="homeNewBookWrap">
+                                        <div class="homeNewBookImg">
+                                            <a href="#">
+                                                <img src="img/bookCover/bookCoverNew/new3.jpg" alt="newBook">
+                                            </a>
+                                        </div>
+                                        <div class="homeNewBookInfo">
+                                            <div class="homeNewBookName"><a href="#">한글을 보면 일본어가 보인다.</a></div>
+                                            <div class="homeNewBookIntro">
+                                                김선재 저 | 보고미디어<br />21년 01월 25일 출간
+                                            </div>
+                                        </div>
+                                    </article>
+
+                                    <article class="homeNewBookWrap">
+                                        <div class="homeNewBookImg">
+                                            <a href="#">
+                                                <img src="img/bookCover/bookCoverNew/new4.jpg" alt="newBook">
+                                            </a>
+                                        </div>
+                                        <div class="homeNewBookInfo">
+                                            <div class="homeNewBookName"><a href="#">IT좀 아는 사람</a></div>
+                                            <div class="homeNewBookIntro">
+                                                닐 메타 외 2명 저 | 월북<br />21년 01월 출간
+                                            </div>
+                                        </div>
+                                    </article>
+
+                                </div>
+
+                                <div class="swiper-slide newBookSlide">
+
+                                    <article class="homeNewBookWrap">
+                                        <div class="homeNewBookImg">
+                                            <a href="#">
+                                                <img src="img/bookCover/bookCoverNew/new5.jpg" alt="newBook">
+                                            </a>
+                                        </div>
+                                        <div class="homeNewBookInfo">
+                                            <div class="homeNewBookName"><a href="#">원 해빗(One habit)</a></div>
+                                            <div class="homeNewBookIntro">
+                                                한상만 저 | 미래의창<br />21년 01월 22일 출간
+                                            </div>
+                                        </div>
+                                    </article>
+
+                                    <article class="homeNewBookWrap">
+                                        <div class="homeNewBookImg">
+                                            <a href="#">
+                                                <img src="img/bookCover/bookCoverNew/new6.jpg" alt="newBook">
+                                            </a>
+                                        </div>
+                                        <div class="homeNewBookInfo">
+                                            <div class="homeNewBookName"><a href="#">혼자 하지 말고 함께해라</a></div>
+                                            <div class="homeNewBookIntro">
+                                                김진희 외 3명 저 | 원앤원북스<br />21년 2월 10일 출간
+                                            </div>
+                                        </div>
+                                    </article>
+
+                                </div>
+
+                                <div class="swiper-slide newBookSlide">
+
+                                    <article class="homeNewBookWrap">
+                                        <div class="homeNewBookImg">
+                                            <a href="#">
+                                                <img src="img/bookCover/bookCoverNew/new7.jpg" alt="newBook">
+                                            </a>
+                                        </div>
+                                        <div class="homeNewBookInfo">
+                                            <div class="homeNewBookName"><a href="#">내 안의 평온을 아껴주세요</a></div>
+                                            <div class="homeNewBookIntro">
+                                                정민 저 | 비채 <br /> 21년 01월 13일 출간
+                                            </div>
+                                        </div>
+                                    </article>
+
+                                    <article class="homeNewBookWrap">
+                                        <div class="homeNewBookImg">
+                                            <a href="#">
+                                                <img src="img/bookCover/bookCoverNew/new8.jpg" alt="newBook">
+                                            </a>
+                                        </div>
+                                        <div class="homeNewBookInfo">
+                                            <div class="homeNewBookName"><a href="#">어떤 죽음이 삶에게 말했다</a></div>
+                                            <div class="homeNewBookIntro">
+                                                김범석 저 | 흐름출판<br />21년 01월 18일 출간
+                                            </div>
+                                        </div>
+                                    </article>
+
+                                </div>
+
+                                <div class="swiper-slide newBookSlide">
+
+                                    <article class="homeNewBookWrap">
+                                        <div class="homeNewBookImg">
+                                            <a href="#">
+                                                <img src="img/bookCover/bookCoverNew/new9.jpg" alt="newBook">
+                                            </a>
+                                        </div>
+                                        <div class="homeNewBookInfo">
+                                            <div class="homeNewBookName"><a href="#">식사가 최고의 투자입니다</a></div>
+                                            <div class="homeNewBookIntro">
+                                                미쓰오 다다시 저 | 북라이프<br />21년 01월 26일 출간
+                                            </div>
+                                        </div>
+                                    </article>
+
+                                    <article class="homeNewBookWrap">
+                                        <div class="homeNewBookImg">
+                                            <a href="#">
+                                                <img src="img/bookCover/bookCoverNew/new10.jpg" alt="newBook">
+                                            </a>
+                                        </div>
+                                        <div class="homeNewBookInfo">
+                                            <div class="homeNewBookName"><a href="#">퇴근길 철학툰 : 고대 중세편</a></div>
+                                            <div class="homeNewBookIntro">
+                                                이즐라 저 | 큐리어스(Qrious)<br />21년 02월 10일 출간
+                                            </div>
+                                        </div>
+                                    </article>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Swiper JS -->
+                        <script src="../package/swiper-bundle.min.js"></script>
+
+                        <!-- Initialize Swiper -->
+                        <script>
+                            var swiper = new Swiper('.newBookContainer');
+                        </script>
+                    </div>
+                    <!-- homeNewBook End -->
+                </section>
+                <!-- homeSection End -->
+
+                <footer id="homeFooter">
+                    <ul id="homeFooterTop">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">주문 / 배송</a></li>
+                        <li><a href="#">장바구니</a></li>
+                    </ul>
+
+                    <nav id="homeFooterBot">
+                        <ul id="homeFooterBot1">
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보 처리방침</a></li>
+                            <li><a href="#">청소년 보호정책</a></li>
+                        </ul>
+                        <ul id="homeFooterBot2">
+                            <li><a href="#">구매안전 서비스</a></li>
+                            <li><a href="#">안전결제 서비스</a></li>
+                        </ul>
+                    </nav>
+                </footer>
+                <!-- homeFooter End -->
+                <div id="TopBtn">
+                    <img src="img/Icon/all/topBtnIcon.png" alt="Top Btn">
+                </div>
+            </div>
+            <!-- home End -->
+
+            <!-- best Page -->
+            <div class="swiper-slide" id="bestPageSwiper">
+
+                <header>
+                    <nav class="topNav">
+                        <article class="menuBtn">
+                            <a href="App_Menu.html">
+                                <img src="img/Icon/header/menuIcon.png" alt="menuIcon">
+                            </a> </article>
+                        <article class="logo">
+                            <a href="#">
+                                <img src="img/logo/menu_logo.png" alt="logoIcon">
+                            </a>
+                        </article>
+                        <div class="rightMenu">
+                            <article class="darkBtn">
+                                <img src="img/Icon/header/darkmode_on.png" alt="darkmodeIcon" class="darkmodeOn">
+                                <img src="img/Icon/header/darkmode_off.png" alt="darkmodIcon" class="darkmodeOff">
+                            </article>
+                            <article class="shopBtn">
+                                <a href="#">
+                                    <img src="img/Icon/header/shoppingIcon.png" alt="shoppingIcon">
+                                </a>
+                            </article>
+                            <article class="mypageBtn">
+                                <a href="App_Login.html"><img src="img/Icon/header/mypageIcon2.png"
+                                        alt="mypageIcon"></a>
+                            </article>
+                        </div>
+                    </nav>
+                    <!-- top Nav End -->
+
+                    <nav class="midNav">
+                        <input type="text" placeholder="내가 읽고싶은 책을 찾아서" title="검색어입력" class="searchBar2">
+                        <div class="searchBtn">
+                            <article class="searchMic">
+                                <a href="#"><img src="img/Icon/header/voiceSearchIcon_color.png" alt="micIcon"></a>
+                            </article>
+                            <article class="searchBtnIcon">
+                                <a href="#"><img src="img/Icon/header/searchIcon2.png" alt="searchIcon"></a>
+                            </article>
+                        </div>
+                    </nav>
+                    <!-- mid Nav End -->
+
+                    <nav class="botNav">
+                        <ul class="navMenu">
+                            <li>홈</li>
+                            <li>베스트</li>
+                            <li>신간</li>
+                            <li>서점별 재고</li>
+                            <li>서점 위치</li>
+                        </ul>
+                    </nav>
+                    <!-- bot Nav End -->
+                </header>
+                <!-- header End -->
+
+                <section id="bestPage">
+                    <article id="bestPageMenu">
+                        <nav id="bestPageMenuTop">
+
+                            <!-- JQuery 클릭 시 화면 변경 -->
+                            <div class="bestsellerMobileTitle" id="bestseller"><a href="#">베스트셀러</a>
+                                <div class="bestsellerMobileIcon">
+                                    <a href="#"><img src="img/Icon/bestPage/bestsellerIcon.png"
+                                            alt="bestsellerIcon"></a>
+                                </div>
+                            </div>
+                            <div class="bestsellerMobileTitle" id="mobileRank"><a href="#">모바일 순위</a>
+                                <div class="bestsellerMobileIcon">
+                                    <a href="#"><img src="img/Icon/bestPage/liverank_mobile.png"
+                                            alt="moblieRankIcon"></a>
+                                </div>
+                            </div>
+                            <!-- bestsellerMobile End -->
+
+                        </nav>
+                        <!-- bestPageMenuTop End -->
+
+                        <nav id="bestPageMenuBot">
+                            <ul id="MenuEtcTop">
+                                <li><a href ="#">인터넷 주간</a></li>
+                                <li><a href = "#">인터넷 일간</a></li>
+                                <li><a href = "#">종합 주간</a></li>
+                                <li><a href = "#">종합 일간</a></li>
+                            </ul>
+
+                            <ul id="MenuEtcBot">
+                                <li><a href = "#">국내 / 해외 선택</a></li>
+                                <li><a href = "#">분야 선택</a></li>
+                            </ul>
+                        </nav>
+                        <!-- bestPageMenuBot End -->
+                    </article>
+                    <!-- bestPageMenu End -->
+
+                    <article id="bestPageContentWrap">
+                        <div id="bestPageTransformBtn">
+                            <img src="img/Icon/bestPage/listIcon2.png" alt="transformIcon" id = "transformIcon1">
+                            <img src = "img/Icon/bestPage/listIcon1.png" alt = "transformIcon" id = "transformIcon2">
+                        </div>
+
+                        <div class="bestPageContent">
+                            <div class="bestPageRank">1</div>
+                            <div class="bestPageContentBook">
+                                <a href="#">
+                                    <img src="img/bookCover/bookCoverLiveRank/kyobo/kyobo_LiveRank1.jpg" alt="bestBook">
+                                </a>
+                            </div>
+
+                            <div class="bestPageContentInfo">
+                                <div class="bestPageContentBookName"><a href="#">주린이가 가장 알고싶은 최다 질문 TOP77</a></div>
+                                <div class="bestPageContentStore">
+                                    <div class="bestPageContentLogo best_kyobo">
+                                        <img src="img/logo/회사 로고/logo_kyobo.png" alt="bestBookLogo">
+                                    </div>
+                                    <div class="bestPageContentGrade">9.8/10</div>
+                                    <div class="bestPageContentPrice">16,200원</div>
+                                </div>
+                                <div class="bestPageContentStore">
+                                    <div class="bestPageContentLogo best_bandi">
+                                        <img src="img/logo/회사 로고/bandi.png" alt="bestBookLogo">
+                                    </div>
+                                    <div class="bestPageContentGrade">9.6/10</div>
+                                    <div class="bestPageContentPrice">16,200원</div>
+                                </div>
+                                <div class="bestPageContentStore">
+                                    <div class="bestPageContentLogo best_aladin">
+                                        <img src="img/logo/회사 로고/aladin_logo_new.png" alt="bestBookLogo">
+                                    </div>
+                                    <div class="bestPageContentGrade">9.1/10</div>
+                                    <div class="bestPageContentPrice">16,200원</div>
+                                </div>
+                                <div class="bestPageContentStore">
+                                    <div class="bestPageContentLogo best_yp">
+                                        <img src="img/logo/회사 로고/yp_logo.png" alt="bestBookLogo">
+                                    </div>
+                                    <div class="bestPageContentGrade">8.8/10</div>
+                                    <div class="bestPageContentPrice">16,200원</div>
+                                </div>
+                                <div class="bestPageContentStore">
+                                    <div class="bestPageContentLogo best_yes">
+                                        <img src="img/logo/회사 로고/logo_yes24.png" alt="bestBookLogo">
+                                    </div>
+                                    <div class="bestPageContentGrade">9.5/10</div>
+                                    <div class="bestPageContentPrice">16,200원</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="bestPageContent">
+                            <div class="bestPageRank">2</div>
+                            <div class="bestPageContentBook"><a href="#">
+                                    <img src="img/bookCover/bookCoverLiveRank/kyobo/kyobo_LiveRank2.jpg" alt="bestBook">
+                                </a></div>
+
+                            <div class="bestPageContentInfo">
+                                <div class="bestPageContentBookName"><a href="#">달러구트 꿈 백화점</a></div>
+                                <div class="bestPageContentStore">
+                                    <div class="bestPageContentLogo best_kyobo">
+                                        <img src="img/logo/회사 로고/logo_kyobo.png" alt="bestBookLogo">
+                                    </div>
+                                    <div class="bestPageContentGrade">9.8/10</div>
+                                    <div class="bestPageContentPrice">16,200원</div>
+                                </div>
+                                <div class="bestPageContentStore">
+                                    <div class="bestPageContentLogo best_bandi">
+                                        <img src="img/logo/회사 로고/bandi.png" alt="bestBookLogo">
+                                    </div>
+                                    <div class="bestPageContentGrade">8.8/10</div>
+                                    <div class="bestPageContentPrice">16,200원</div>
+                                </div>
+                                <div class="bestPageContentStore">
+                                    <div class="bestPageContentLogo best_aladin">
+                                        <img src="img/logo/회사 로고/aladin_logo_new.png" alt="bestBookLogo">
+                                    </div>
+                                    <div class="bestPageContentGrade">9.2/10</div>
+                                    <div class="bestPageContentPrice">16,200원</div>
+                                </div>
+                                <div class="bestPageContentStore">
+                                    <div class="bestPageContentLogo best_yp">
+                                        <img src="img/logo/회사 로고/yp_logo.png" alt="bestBookLogo">
+                                    </div>
+                                    <div class="bestPageContentGrade">9.8/10</div>
+                                    <div class="bestPageContentPrice">16,200원</div>
+                                </div>
+                                <div class="bestPageContentStore">
+                                    <div class="bestPageContentLogo best_yes">
+                                        <img src="img/logo/회사 로고/logo_yes24.png" alt="bestBookLogo">
+                                    </div>
+                                    <div class="bestPageContentGrade">9.5/10</div>
+                                    <div class="bestPageContentPrice">16,200원</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="bestPageContent">
+                            <div class="bestPageRank">3</div>
+                            <div class="bestPageContentBook"><a href="#">
+                                    <img src="img/bookCover/bookCoverLiveRank/kyobo/kyobo_LiveRank3.jpg" alt="bestBook">
+                                </a></div>
+
+                            <div class="bestPageContentInfo">
+                                <div class="bestPageContentBookName"><a href="#">2030 축의 전환</a></div>
+                                <div class="bestPageContentStore">
+                                    <div class="bestPageContentLogo best_kyobo">
+                                        <img src="img/logo/회사 로고/logo_kyobo.png" alt="bestBookLogo">
+                                    </div>
+                                    <div class="bestPageContentGrade">9.7/10</div>
+                                    <div class="bestPageContentPrice">16,200원</div>
+                                </div>
+                                <div class="bestPageContentStore">
+                                    <div class="bestPageContentLogo best_bandi">
+                                        <img src="img/logo/회사 로고/bandi.png" alt="bestBookLogo">
+                                    </div>
+                                    <div class="bestPageContentGrade">8.9/10</div>
+                                    <div class="bestPageContentPrice">16,200원</div>
+                                </div>
+                                <div class="bestPageContentStore">
+                                    <div class="bestPageContentLogo best_aladin">
+                                        <img src="img/logo/회사 로고/aladin_logo_new.png" alt="bestBookLogo">
+                                    </div>
+                                    <div class="bestPageContentGrade">8.7/10</div>
+                                    <div class="bestPageContentPrice">16,200원</div>
+                                </div>
+                                <div class="bestPageContentStore">
+                                    <div class="bestPageContentLogo best_yp">
+                                        <img src="img/logo/회사 로고/yp_logo.png" alt="bestBookLogo">
+                                    </div>
+                                    <div class="bestPageContentGrade">9.1/10</div>
+                                    <div class="bestPageContentPrice">16,200원</div>
+                                </div>
+                                <div class="bestPageContentStore">
+                                    <div class="bestPageContentLogo best_yes">
+                                        <img src="img/logo/회사 로고/logo_yes24.png" alt="bestBookLogo">
+                                    </div>
+                                    <div class="bestPageContentGrade">9.2/10</div>
+                                    <div class="bestPageContentPrice">16,200원</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </article>
+                    <!-- bestPageContent End -->
+                </section>
+
+            </div>
+            <!-- best Page End -->
+
+
+            <!-- newBook Page -->
+            <div class="swiper-slide" id="newBookPageSwiper">
+
+                <header>
+                    <nav class="topNav">
+                        <article class="menuBtn">
+                            <a href="App_Menu.html">
+                                <img src="img/Icon/header/menuIcon.png" alt="menuIcon">
+                            </a> </article>
+                        <article class="logo">
+                            <a href="#">
+                                <img src="img/logo/menu_logo.png" alt="logoIcon">
+                            </a>
+                        </article>
+                        <div class="rightMenu">
+                            <article class="darkBtn">
+                                <img src="img/Icon/header/darkmode_on.png" alt="darkmodeIcon" class="darkmodeOn">
+                                <img src="img/Icon/header/darkmode_off.png" alt="darkmodIcon" class="darkmodeOff">
+                            </article>
+                            <article class="shopBtn">
+                                <a href="#">
+                                    <img src="img/Icon/header/shoppingIcon.png" alt="shoppingIcon">
+                                </a> </article>
+                            <article class="mypageBtn">
+                                <a href="App_Login.html"><img src="img/Icon/header/mypageIcon2.png"
+                                        alt="mypageIcon"></a>
+                            </article>
+                        </div>
+                    </nav>
+                    <!-- top Nav End -->
+
+                    <nav class="midNav">
+                        <input type="text" placeholder="내가 읽고싶은 책을 찾아서" title="검색어입력" class="searchBar2">
+                        <div class="searchBtn">
+                            <article class="searchMic">
+                                <a href="#"><img src="img/Icon/header/voiceSearchIcon_color.png" alt="micIcon"></a>
+                            </article>
+                            <article class="searchBtnIcon">
+                                <a href="#"><img src="img/Icon/header/searchIcon2.png" alt="searchIcon"></a>
+                            </article>
+                        </div>
+                    </nav>
+                    <!-- mid Nav End -->
+
+                    <nav class="botNav">
+                        <ul class="navMenu">
+                            <li>홈</li>
+                            <li>베스트</li>
+                            <li>신간</li>
+                            <li>서점별 재고</li>
+                            <li>서점 위치</li>
+                        </ul>
+                    </nav>
+                    <!-- bot Nav End -->
+                </header>
+                <!-- header End -->
+
+                <section id="newBookPage">
+
+                    <article id="newBookPageTop">
+                        <h2 id="newBookPageTitle">신간소개</h2>
+                        <div id="newBookPageMenu">
+                            <div id="newBookPageField"><a href="#">분야선택</a></div>
+                            <div class="newBookPageBtn" id="newBookPageSort"><a href="#">등록일자</a></div>
+                            <div class="newBookPageBtn" id="newBookPageDate"><a href="#">정렬</a></div>
+                        </div>
+                    </article>
+                    <!-- newBookPageTop End -->
+
+                    <article id="newBookPageBot">
+
+                        <div class="newBookPageContentBox">
+                            <div class="newBookPageBookImg">
+                                <a href="#"><img src="img/bookCover/bookCoverNew/new1.jpg" alt="newBook"></a>
+                            </div>
+                            <div class="newBookPageContentRight">
+                                <div class="newBookPageName"><a href="#">조선 금수저의 슬기로운 일상탐닉</a></div>
+                                <div class="newBookPageAuthor">안나미 저 / 의미와 재미 <br />/ 21년 01월 30일 출간 / 14,400원</div>
+                                <div class="newBookPageIntro">이 책은 역사학자가 아닌, 한학자의 시선으로
+                                    발굴한 조선 선비들의 일상탐닉에 관한 이야기다. 역사의 대동맥 사이사이,
+                                    모세혈관처럼 생생하게 존재했던 개인의 숨결을 모은 기록이다. 수천 건의
+                                    문헌을 발굴하고 수만 건의 한문漢文 문장을 분석해, 역사의 퍼즐을 맞춰간
+                                    수기와 같다.</div>
+                            </div>
+                        </div>
+
+                        <div class="newBookPageContentBox">
+                            <div class="newBookPageBookImg">
+                                <a href="#"><img src="img/bookCover/bookCoverNew/new2.jpg" alt="newBook"></a>
+                            </div>
+                            <div class="newBookPageContentRight">
+                                <div class="newBookPageName"><a href="#">리얼리티 버블</a></div>
+                                <div class="newBookPageAuthor">지야 통 저(장호연 역) / 코쿤북스 <br />/ 21년 01월 25일 출간 / 15,840원
+                                </div>
+                                <div class="newBookPageIntro">『리얼리티 버블』은 캐나다의 과학 저널리스트이자 방송인인 지야 통의
+                                    첫 책이다. 통은 17년간의 방송 경력을 통해 과학에 대한 사랑을 키워 왔다. 인터뷰어로서
+                                    그녀는 생각할 수 있는 모든 전문가들을 만났고, 다른 사람들의 눈을 통해 세계를 보는 법을
+                                    배웠다. 이 책은 바로 그 ‘보는’ 방법에 관한 이야기이다.</div>
+                            </div>
+                        </div>
+
+                        <div class="newBookPageContentBox">
+                            <div class="newBookPageBookImg">
+                                <a href="#"><img src="img/bookCover/bookCoverNew/new3.jpg" alt="newBook"></a>
+                            </div>
+                            <div class="newBookPageContentRight">
+                                <div class="newBookPageName"><a href="#">한글을 보면 일본어가 보인다</a></div>
+                                <div class="newBookPageAuthor">김선재 저 / 보고미디어<br />/ 21년 01월 25일 출간 / 13,500원</div>
+                                <div class="newBookPageIntro">우리 대한민국 국민이 사용하는 한국어에는 50% 정도가 모두 중국에서 사용하던
+                                    한자고, 한자를 한글로 표음화하여 사용하고 있는 것입니다. 나머지는 순수 한국어 표현과 우리말로 이뤄져
+                                    있습니다. 일본어도 마찬가지입니다.
+                                    순수 일본 말과 표현을 제외하고 일본어의 50% 정도는 모두 한자입니다.
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                    <!-- newBookPageBot End -->
+
+                </section>
+                <!-- newBookPage End -->
+            </div>
+            <!-- newBook Page End -->
+
+            <!-- inventory Page -->
+            <div class="swiper-slide" id="inventoryPageSwiper">
+
+                <header>
+                    <nav class="topNav">
+                        <article class="menuBtn">
+                            <a href="App_Menu.html">
+                                <img src="img/Icon/header/menuIcon.png" alt="menuIcon">
+                            </a> </article>
+                        <article class="logo">
+                            <a href="#">
+                                <img src="img/logo/menu_logo.png" alt="logoIcon">
+                            </a>
+                        </article>
+                        <div class="rightMenu">
+                            <article class="darkBtn">
+                                <img src="img/Icon/header/darkmode_on.png" alt="darkmodeIcon" class="darkmodeOn">
+                                <img src="img/Icon/header/darkmode_off.png" alt="darkmodIcon" class="darkmodeOff">
+                            </article>
+                            <article class="shopBtn">
+                                <a href="#">
+                                    <img src="img/Icon/header/shoppingIcon.png" alt="shoppingIcon">
+                                </a> </article>
+                            <article class="mypageBtn">
+                                <a href="App_Login.html"><img src="img/Icon/header/mypageIcon2.png"
+                                        alt="mypageIcon"></a>
+                            </article>
+                        </div>
+                    </nav>
+                    <!-- top Nav End -->
+
+                    <nav class="midNav">
+                        <input type="text" placeholder="내가 읽고싶은 책을 찾아서" title="검색어입력" class="searchBar2">
+                        <div class="searchBtn">
+                            <article class="searchMic">
+                                <a href="#"><img src="img/Icon/header/voiceSearchIcon_color.png" alt="micIcon"></a>
+                            </article>
+                            <article class="searchBtnIcon">
+                                <a href="#"><img src="img/Icon/header/searchIcon2.png" alt="searchIcon"></a>
+                            </article>
+                        </div>
+                    </nav>
+                    <!-- mid Nav End -->
+
+                    <nav class="botNav">
+                        <ul class="navMenu">
+                            <li>홈</li>
+                            <li>베스트</li>
+                            <li>신간</li>
+                            <li>서점별 재고</li>
+                            <li>서점 위치</li>
+                        </ul>
+                    </nav>
+                    <!-- bot Nav End -->
+                </header>
+                <!-- header End -->
+
+
+                <section id="inventoryPage">
+                    <h2 id="inventoryTitle">서점별 재고현황</h2>
+                    <div id="inventoryMenu">
+
+                        <nav id="inventoryMenuTop">
+                            <div id="inventoryStore">서점 선택</div>
+                            <div id="inventoryField"><a href="#">분야 선택</a></div>
+                            <!-- hiddne Wrap - inventoryStore 클릭시 나오도록 -->
+                            <div id="inventoryStoreWrap">
+                                <div class="inventoryBox">
+                                    <div class="inventoryBoxLeft kyoboBoxLogo">
+                                        <img src="img/logo/회사 로고/logo_kyobo.png" alt="inventoryBoxLogo">
+                                    </div>
+                                    <div class="inventoryBoxRight">
+                                        <div class="seoul">서울</div>
+                                        <div class="capitalArea">수도권</div>
+                                        <div class="sideArea">지방</div>
+                                    </div>
+                                </div>
+                                <div class="inventoryBox">
+                                    <div class="inventoryBoxLeft bandiBoxLogo">
+                                        <img src="img/logo/회사 로고/bandi.png" alt="inventoryBoxLogo">
+                                    </div>
+                                    <div class="inventoryBoxRight">
+                                        <div class="seoul">서울</div>
+                                        <div class="capitalArea">수도권</div>
+                                        <div class="sideArea">지방</div>
+                                    </div>
+                                </div>
+                                <div class="inventoryBox">
+                                    <div class="inventoryBoxLeft aladinBoxLogo">
+                                        <img src="img/logo/회사 로고/aladin_logo_new.png" alt="inventoryBoxLogo">
+                                    </div>
+                                    <div class="inventoryBoxRight">
+                                        <div class="seoul">서울</div>
+                                        <div class="capitalArea">수도권</div>
+                                        <div class="sideArea">지방</div>
+                                    </div>
+                                </div>
+                                <div class="inventoryBox">
+                                    <div class="inventoryBoxLeft ypBoxLogo">
+                                        <img src="img/logo/회사 로고/yp_logo.png" alt="inventoryBoxLogo">
+                                    </div>
+                                    <div class="inventoryBoxRight">
+                                        <div class="seoul">서울</div>
+                                        <div class="capitalArea">수도권</div>
+                                        <div class="sideArea">지방</div>
+                                    </div>
+                                </div>
+                                <div class="inventoryBox">
+                                    <div class="inventoryBoxLeft yes24BoxLogo">
+                                        <img src="img/logo/회사 로고/logo_yes24.png" alt="inventoryBoxLogo">
+                                    </div>
+                                    <div class="inventoryBoxRight">
+                                        <div class="seoul">서울</div>
+                                        <div class="capitalArea">수도권</div>
+                                        <div class="sideArea">지방</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+
+                        <nav id=inventoryMenuBot>
+                            <input type="text" placeholder="책 제목을 입력해 주세요" title="검색어 입력" id="inventorySearchBar">
+                            <a href="#">
+                                <img src="img/Icon/header/searchIcon1.png" alt="inventorySearchIcon">
+                            </a>
+                            <div id="inventroySort"><a href="#">정렬</a></div>
+                        </nav>
+                    </div>
+
+                    <div id="inventoryContent">
+                        <div class="inventoryBookImg"><a href="#">
+                                <img src="img/bookCover/bookCoverLiveRank/kyobo/kyobo_LiveRank1.jpg"
+                                    alt="inventoryBook">
+                            </a></div>
+                        <div class="inventoryContentRight">
+                            <div class="inventoryBookName"><a herf="#">주린이가 가장 알고 싶은 최다 질문 TOP77</a></div>
+                            <div class="inventoryBookPrice">16,200원</div>
+                            <div class="inventoryLogoLoctaion">
+                                <img src="img/logo/회사 로고/logo_kyobo.png" alt="inventoryLogo">
+                                <span id="inventoryLocationText">지방</span>
+                            </div>
+                            <div class="inventoryTextWrap">
+                                <div class="inventoryTextLeft">
+                                    경성대•부경대 16<br />광주상무 20<br />대구 537<br />대전 78<br />반월당 67<br />부산 140<br />
+                                    세종 25<br />센텀시티 74
+                                </div>
+                                <div class="inventroyTextRight">
+                                    울산 47<br />전북대 11<br />전주 155<br />창원 156<br />천안 240<br />칠곡 63<br />포항공대점 3<br />
+                                    해운대 센터 20
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </section>
+
+            </div>
+            <!-- inventory Page End -->
+
+            <!-- location Page -->
+            <div class="swiper-slide" id="locationPageSwiper">
+
+                <header>
+                    <nav class="topNav">
+                        <article class="menuBtn">
+                            <a href="App_Menu.html">
+                                <img src="img/Icon/header/menuIcon.png" alt="menuIcon">
+                            </a> </article>
+                        <article class="logo">
+                            <a href="#">
+                                <img src="img/logo/menu_logo.png" alt="logoIcon">
+                            </a>
+                        </article>
+                        <div class="rightMenu">
+                            <article class="darkBtn">
+                                <img src="img/Icon/header/darkmode_on.png" alt="darkmodeIcon" class="darkmodeOn">
+                                <img src="img/Icon/header/darkmode_off.png" alt="darkmodIcon" class="darkmodeOff">
+                            </article>
+                            <article class="shopBtn">
+                                <a href="#">
+                                    <img src="img/Icon/header/shoppingIcon.png" alt="shoppingIcon">
+                                </a> </article>
+                            <article class="mypageBtn">
+                                <a href="App_Login.html"><img src="img/Icon/header/mypageIcon2.png"
+                                        alt="mypageIcon"></a>
+                            </article>
+                        </div>
+                    </nav>
+                    <!-- top Nav End -->
+
+                    <nav class="midNav">
+                        <input type="text" placeholder="내가 읽고싶은 책을 찾아서" title="검색어입력" class="searchBar2">
+                        <div class="searchBtn">
+                            <article class="searchMic">
+                                <a href="#"><img src="img/Icon/header/voiceSearchIcon_color.png" alt="micIcon"></a>
+                            </article>
+                            <article class="searchBtnIcon">
+                                <a href="#"><img src="img/Icon/header/searchIcon2.png" alt="searchIcon"></a>
+                            </article>
+                        </div>
+                    </nav>
+                    <!-- mid Nav End -->
+
+                    <nav class="botNav">
+                        <ul class="navMenu">
+                            <li>홈</li>
+                            <li>베스트</li>
+                            <li>신간</li>
+                            <li>서점별 재고</li>
+                            <li>서점 위치</li>
+                        </ul>
+                    </nav>
+                    <!-- bot Nav End -->
+                </header>
+                <!-- header End -->
+
+                <section id="locationPage">
+                    <article id="locationPageTop">
+                        <h2 id="locationPageTitle">서점위치</h2>
+                        <div id="locationBtnWrap">
+                            <div id="locationAreaBtn">지역 선택</div>
+                            <div id="locationStoreBtn">서점 선택</div>
+                        </div>
+                        <!-- hidden Box -->
+                        <ul id="locationAreaBox">
+                            <li class="areaBtn"><a href = "#">근처 지역</a></li>
+                            <li class="areaBtn"><a href = "#">서울</a></li>
+                            <li class="areaBtn"><a href = "#">수도권</a></li>
+                            <li class="areaBtn"><a href = "#">지방</a></li>
+                        </ul>
+                        <!-- hidden Box -->
+                        <ul id="locationStoreBox1">
+                            <li class="storeBtn"><a herf = "#">전체</a></li>
+                            <li class="storeBtn"><a href = "#">교보문고</a></li>
+                            <li class="storeBtn"><a href = "#">반디앤루니스</a></li>
+
+                        </ul>
+                        <ul id="locationStoreBox2">
+
+                            <li class="storeBtn"><a href = "#">알라딘</a></li>
+                            <li class="storeBtn"><a href = "#">영풍문고</a></li>
+                            <li class="storeBtn"><a href = "#">Yes24</a></li>
+                        </ul>
+                    </article>
+                    <!-- locationPageTop End -->
+
+
+                    <article id="locationPageBot">
+                        <div class="locationContentWrap">
+                            <div class="locationLogo" id="kyobo_location">
+                                <img src="img/logo/회사 로고/logo_kyobo.png" alt="locationLogo">
+                            </div>
+                            <div class="locationContentRight">
+                                <div class="locationContentAdd">
+                                    <img src="img/Icon/bookstoreLocationPage/addressIcon.png" alt="locationIcon">
+                                    부산광역시 부산진구 중앙대로 658, 교보생명빌딩 1F, B1
+                                </div>
+                                <div class="locationContentCall">
+                                    <img src="img/Icon/all/call_noticeIcon.png" alt="locationIcon">
+                                    051-806-3501 /영업시간 11:00 ~ 21:30 <br />/휴점일 설(당일), 추석(당일)
+                                </div>
+                                <div class="locationContentMap">
+                                    <a href="#">
+                                        <img src="img/Icon/bookstoreLocationPage/mapIcon.png" alt="locationIcon">
+                                        약도보기
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="locationContentWrap">
+                            <div class="locationLogo" id="bandi_location">
+                                <img src="img/logo/회사 로고/bandi.png" alt="locationLogo">
+                            </div>
+                            <div class="locationContentRight">
+                                <div class="locationContentAdd">
+                                    <img src="img/Icon/bookstoreLocationPage/addressIcon.png" alt="locationIcon">
+                                    부산광역시 해운대구 센텀4로 15 신세계 센텀시티몰 B2
+                                </div>
+                                <div class="locationContentCall">
+                                    <img src="img/Icon/all/call_noticeIcon.png" alt="locationIcon">
+                                    051-750-2900 /영업시간 11:00 ~ 20:00<br />(백화점 영업시간 및 영업일과 동일)
+                                </div>
+                                <div class="locationContentMap">
+                                    <a href="#">
+                                        <img src="img/Icon/bookstoreLocationPage/mapIcon.png" alt="locationIcon">
+                                        약도보기
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="locationContentWrap">
+                            <div class="locationLogo" id="aladin_location">
+                                <img src="img/logo/회사 로고/aladin_logo_new.png" alt="locationLogo">
+                            </div>
+                            <div class="locationContentRight">
+                                <div class="locationContentAdd">
+                                    <img src="img/Icon/bookstoreLocationPage/addressIcon.png" alt="locationIcon">
+                                    부산광역시 부산진구 중앙대로 704 동보프라자 2,3F
+                                </div>
+                                <div class="locationContentCall">
+                                    <img src="img/Icon/all/call_noticeIcon.png" alt="locationIcon">
+                                    1544-2514 /영업시간 09:30 ~ 21:00 <br />/휴점일 설(당일), 추석(당일)
+                                </div>
+                                <div class="locationContentMap">
+                                    <a href="#">
+                                        <img src="img/Icon/bookstoreLocationPage/mapIcon.png" alt="locationIcon">
+                                        약도보기
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="locationContentWrap">
+                            <div class="locationLogo" id="yp_location">
+                                <img src="img/logo/회사 로고/yp_logo.png" alt="locationLogo">
+                            </div>
+                            <div class="locationContentRight">
+                                <div class="locationContentAdd">
+                                    <img src="img/Icon/bookstoreLocationPage/addressIcon.png" alt="locationIcon">
+                                    부산광역시 중구 중앙동 중앙대로2 롯데백화점 광복점 5F
+                                </div>
+                                <div class="locationContentCall">
+                                    <img src="img/Icon/all/call_noticeIcon.png" alt="locationIcon">
+                                    051-678-4100 /영업시간 10:30 ~ 22:00<br />/(백화점 영업시간 및 영업일과 동일)
+                                </div>
+                                <div class="locationContentMap">
+                                    <a href="#">
+                                        <img src="img/Icon/bookstoreLocationPage/mapIcon.png" alt="locationIcon">
+                                        약도보기
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="locationContentWrap">
+                            <div class="locationLogo" id="yes_location">
+                                <img src="img/logo/회사 로고/logo_yes24.png" alt="locationLogo">
+                            </div>
+                            <div class="locationContentRight">
+                                <div class="locationContentAdd">
+                                    <img src="img/Icon/bookstoreLocationPage/addressIcon.png" alt="locationIcon">
+                                    부산광역시 부산진구 중앙대로 709, BF2(부전동,서면금융프라자)
+                                </div>
+                                <div class="locationContentCall">
+                                    <img src="img/Icon/all/call_noticeIcon.png" alt="locationIcon">
+                                    1566-4295 /영업시간 09:30 ~ 22:00<br /> /휴점일 설(당일), 추석(당일)
+                                </div>
+                                <div class="locationContentMap">
+                                    <a href="#">
+                                        <img src="img/Icon/bookstoreLocationPage/mapIcon.png" alt="locationIcon">
+                                        약도보기
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+            </div>
+            <!-- location Page End -->
+
+
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="../package/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.mainContainer');
+    </script>
+    <!-- swiper End -->
+
+</body>
+
+</html>

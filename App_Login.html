@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src = "js/App.js"></script>
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href = "css/App_Login.css" rel = "stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <title>Application_Login</title>
+</head>
+
+<body>
+    <div id="loginWrap">
+        <header>
+            <nav class="topNav">
+                <article class="menuBtn">
+                    <a href = "App_Menu.html">
+                    <img src = "img/Icon/header/menuIcon.png" alt = "menuIcon">
+                </a>
+                </article>
+                <article class="logo">
+                    <a href ="App_reset.html">
+                    <img src = "img/logo/menu_logo.png" alt = "logoIcon">
+                    </a>
+                </article>
+                <div class="rightMenu">
+                    <article class="darkBtn">
+                        <img src = "img/Icon/header/darkmode_on.png" alt = "darkmodeIcon" class = "darkmodeOn">
+                        <img src = "img/Icon/header/darkmode_off.png" alt = "darkmodIcon" class = "darkmodeOff">
+                    </article>
+                    <article class="shopBtn">
+                        <a href = "#">
+                            <img src = "img/Icon/header/shoppingIcon.png" alt = "shoppingIcon">
+                        </a>                    </article>
+                    <article class="mypageBtn">
+                        <a href = "App_Login.html"><img src = "img/Icon/header/mypageIcon2.png" alt = "mypageIcon"></a> 
+                    </article>
+                </div>
+            </nav>
+            <!-- top Nav End -->
+
+            <nav class="midNav">
+                <input type = "text" placeholder="내가 읽고싶은 책을 찾아서" title= "검색어입력" class = "searchBar2">
+                    <div class="searchBtn">
+                        <article class="searchMic">
+                            <a href = "#"><img src = "img/Icon/header/voiceSearchIcon_color.png" alt = "micIcon"></a>
+                        </article>
+                        <article class="searchBtnIcon">
+                            <a href = "#"><img src = "img/Icon/header/searchIcon2.png" alt = "searchIcon"></a>
+                        </article>
+                    </div>
+            </nav>
+            <!-- mid Nav End -->
+
+            <!-- <nav class="botNav">
+                <ul class="navMenu">
+                    <li>홈</li>
+                    <li>베스트</li>
+                    <li>신간</li>
+                    <li>서점별 재고</li>
+                    <li>서점 위치</li>
+                </ul>
+            </nav>
+            bot Nav End -->
+        </header>
+        <!-- header End -->
+
+        <section id="loginSection">
+            <article id="loginTitle">로그인</article>
+
+            <article id="loginMain">
+
+                <nav id="loginBtnWrap">
+                    <div id="biometriLogin"><a href = "#">지문인식 로그인</a></div>
+                    <div id="IDLogin">ID / PW 로그인</div>
+                </nav>
+                <!-- loginBtnWrap End -->
+
+                <div id="IDLoginWrap">
+                    <!-- 숨겨저 있는 공간. ID/PW로그인 버튼 클릭시 나타나는 공간임. -->
+                    <input type = "text" placeholder="ID 입력" title = "ID 입력창" class = "IDPWInput">
+                    <input type = "text" placeholder="PW 입력" title = "ID 입력창" class = "IDPWInput">
+                    <div id="loginBtn"><a href = "#">로그인</a></div>
+                </div>
+                <!-- IDLoginWrap End(hidden Wrap) -->
+
+                <nav id="loginCheckBox">
+                    <div id="IDSaveBox">
+                        <input type="checkbox" class="loginCheck">
+                        <label for="loginCheck" class="loginCheckLabel">
+                            <div class="loginCheckImg">
+                                <img src = "img/Icon/loginPage/autoLoginIcon.png" alt = "loginIcon" id = "loginIconNondCheck">
+                                <img src = "img/Icon/loginPage/autoLoginIcon_check.png" alt = "loginIcon" id = "loginIconCheck">
+                            </div>
+                            <p class= "loginCheckTitle loginID">ID 저장</p>
+                        </label>
+                    </div>
+                    <div id = "IDAutoBox">
+                        <input type="checkbox" class="loginCheck">
+                        <label for="loginCheck" class="loginCheckLabel">
+                            <div class="loginCheckImg">
+                                <img src = "img/Icon/loginPage/autoLoginIcon.png" alt = "loginIcon" id = "loginAutoNoneCheck">
+                                <img src = "img/Icon/loginPage/autoLoginIcon_check.png" alt = "loginIcon" id = "loginAutoCheck">
+                            </div>
+                            <p class= "loginCheckTitle loginAuto">자동 로그인</p>
+                        </label>
+                    </div>
+                </nav>
+                <!-- loginCheckBox End -->
+                
+                <nav id = "loginMenu">
+                    <ul id = "loginMenuWrap">
+                        <li>
+                            <div class = "loginMenuIcon">
+                                <a href = "#">
+                                <img src = "img/Icon/header/searchIcon1.png" alt = "loginSearch">
+                            </a>
+                            </div>
+                            
+                            <span class = "loginMenuText"><a href = "#">ID찾기</a></span>
+                        </li>
+
+                        <li>
+                            <div class = "loginMenuIcon">
+                                <a href = "#">
+                                <img src ="img/Icon/loginPage/pwSearchIcon.png" alt = "pwSearchIcon">
+                            </a>
+                            </div>
+                            <span class = "loginMenuText">
+                                <a href = "#">PW찾기
+                                </a>
+                                </span>
+                        </li>
+                        <li>
+                            <div class = "loginMenuIcon">
+                                <a href = "#">
+                                <img src = "img/Icon/loginPage/joinIcon.png" alt = "joinIcon">
+                            </a>
+                            </div>
+                            <span class = "loginMenuText">
+                                <a href = "#">회원가입</a></span>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- loginMenu End -->
+
+            </article>
+            <!-- loginMain End -->
+
+            <article id="easyLogin">
+                <div id = "easyLoginTitle">간편 로그인</div>
+                <ul id = "easyLoginIcon">
+                    <li><a href = "#"><img src = "img/logo/회사 로고/naver_logo.png"></a></li>
+                    <li><a href = "#"><img src = "img/logo/회사 로고/kakao_logo.png"></a></li>
+                    <li><a href = "#"><img src = "img/logo/회사 로고/apple_logo.png"></a></li>
+                </ul>
+            </article>
+            <!-- easyLogin End -->
+
+        </section>
+        <!-- loginSection End -->
+
+    </div>
+    <!-- loginWrap End -->
+
+</body>
+
+</html>

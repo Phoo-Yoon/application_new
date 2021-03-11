@@ -1,0 +1,100 @@
+#newBookPageSwiper{
+    overflow: hidden;
+    width : 500px;
+}
+#newBookPage{
+    width : 500px;
+    overflow: hidden;
+    /* background-color: steelblue; */
+}
+#newBookPageTop{
+    width : 500px;
+    height: 150px;
+    /* background-color: tan; */
+}
+#newBookPageTitle{
+    width : 150px;
+    height: 30px;
+    /* background-color: red; */
+    text-align: center;
+    line-height: 30px;
+    position : relative;
+    top : 30px;
+    left : 175px;
+}
+#newBookPageMenu{
+    width : 472px;
+    height: 30px;
+    position : relative;
+    top : 60px;
+    left : 14px;
+    /* background-color: beige; */
+}
+#newBookPageField{
+    width : 200px;
+    height: 30px;
+    float : left;
+    background-color: #88b04b;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 20px;
+}
+.newBookPageBtn{
+    float : right;
+    width : 80px;
+    height: 30px;
+    background-color: #88b04b;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 20px;
+}
+#newBookPageDate{
+    margin-right : 30px;
+}
+#newBookPageBot{
+    width : 500px;
+    overflow: hidden;
+    position : relative;
+}
+.newBookPageContentBox{
+    width : 500px;
+    height: 250px;
+    /* background-color: darkred; */
+    border-bottom : 2px solid #88b04b;
+}
+.newBookPageBookImg{
+    width : 120px;
+    height: 160px;
+    /* background-color: black; */
+    float : left;
+    margin : 14px;
+}
+.newBookPageContentRight{
+    width : 352px;
+    height: 200px;
+    /* background-color: darksalmon; */
+    float : right;
+    margin-top : 14px;
+}
+.newBookPageName{
+    width : 352px;
+    height: 30px;
+    /* background-color: deepskyblue; */
+    text-align: left;
+    line-height: 30px;
+    margin-bottom : 5px;
+    font-weight: 900;
+}
+.newBookPageAuthor{
+    width : 352px;
+    height: 50px;
+    /* background-color: dodgerblue; */
+    margin-bottom : 5px;
+    font-size: 13px;
+}
+.newBookPageIntro{
+    width : 352px;
+    height: 110px;
+    /* background-color: gray; */
+    font-size : 13px;
+}

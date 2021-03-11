@@ -1,0 +1,264 @@
+#menuPageSection{
+    width : 500px;
+    overflow: hidden;
+    /* background-color: lightsalmon; */
+    position : relative;
+    top : 0;
+    left : 0;
+}
+
+#menuPageTopMenu{
+    width : 500px;
+    height: 80px;
+    /* background-color: lightseagreen; */
+    border-bottom : 2px solid #88b04b;
+    box-sizing: border-box;
+    margin-left : 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menuPageTopMenu li{
+    width : 100px;
+    height: 70px;
+    /* background-color: lightskyblue; */
+    float : left;
+    /* border : 1px solid white; */
+    box-sizing: border-box;
+    position : relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#menuPageTopMenu li:first-child{
+    margin-left : 50px;
+}
+#menuPageTopMenu li:last-child{
+    margin-right : 50px;
+}
+
+.menuPageTopMenuImg{
+    width : 30px;
+    height: 30px;
+    /* background-color: black; */
+    float : left;
+}
+.menuPageTopMenuText{
+    /* background-color: white; */
+    width : 70px;
+    height: 20px;
+    line-height: 20px;
+    font-size : 13px;
+    text-align: center;
+    font-weight: 900;
+}
+/* menuPage Top Menu End */
+
+#menuPageCategory{
+    width : 500px;
+    height: 170px;
+    /* background-color: burlywood; */
+    position : relative;
+}
+
+.menuPageTitle{
+    /* background-color: cornflowerblue; */
+    width : 150px;
+    height: 25px;
+    position : absolute;
+    top : 15px;
+    left : 14px;
+    z-index: 9;
+}
+/* menuPageTitle End */
+
+#menuPageCategoryWrap{
+    width : 472px;
+    height: 100px;
+    border : 2px solid #88b04b;
+    position : absolute;
+    top : 50px;
+    left : 14px;
+}
+#menuPageCategory1,#menuPageCategory2,#menuPageCategory3,#menuPageCategory4,#menuPageCategory5{
+    /* background-color: crimson; */
+    width : 100px;
+    height: 30px;
+    border : 1px solid #88b04b;
+    position : absolute;
+    text-align: center;
+    line-height: 30px;
+    font-size : 13px;
+    font-weight: 500;
+}
+#menuPageCategory1{
+    left : 50px;
+    top : 10px;
+}
+#menuPageCategory2{
+    top : 10px;
+    left : 186px;
+}
+#menuPageCategory3{
+    top : 10px;
+    right : 50px;
+}
+#menuPageCategory4{
+    left : 50px;
+    top : 60px;
+}
+#menuPageCategory5{
+    top : 60px;
+    left : 186px;
+}
+/* menuPageCategory End */
+
+#menuPageProduct{
+    width : 500px;
+    height: 270px;
+    /* background-color: cyan; */
+    position : relative;
+}
+
+#menuPageProductWrap{
+    width : 472px;
+    height: 200px;
+    border : 2px solid #88b04b;
+    position : absolute;
+    top : 50px;
+    left : 14px;
+}
+
+#productBook{
+    width : 472px;
+    height: 200px;
+    float : left;
+    /* background-color: black; */
+}
+#productBook li{
+    width : 120px;
+    height: 160px;
+    /* background-color: cadetblue; */
+    float : left;
+    margin-top : 20px;
+    margin-left : 30px;
+    position : relative;
+}
+.productRemove{
+    width : 30px;
+    height: 30px;
+    /* background-color: white; */
+    position : absolute;
+    top : -15px;
+    right : -15px;
+}
+
+/* menuPageProduct End */
+
+#menuPageBookStore{
+    width : 500px;
+    height: 300px;
+    /* background-color: lightpink; */
+    position : relative;
+}
+
+#menuPageBookStoreWrap{
+    width : 472px;
+    height: 235px;
+    /* background-color: lightskyblue; */
+    margin-left : 14px;
+    position : relative;
+    top : 50px;
+}
+
+#bookStoreLeft, #bookStoreRight{
+    width : 236px;
+    height : 235px;
+    float : left;
+}
+
+.menuPageBookStoreLogoWrap{
+    width : 130px;
+    height: 50px;
+    position : relative;
+    margin-top : 20px;
+    /* background-color: white; */
+    margin-left : 50px;
+}
+#menuPageBookStoreLogo1{
+    width : 100px;
+    height: 28px;
+    position : absolute;
+    top : 11px;
+    left : 0;
+}
+#menuPageBookStoreLogo2{
+    width : 100px;
+    height: 46px;
+    position : absolute;
+    top : 2px;
+    left : 0;
+}
+#menuPageBookStoreLogo3{
+    width : 100px;
+    height: 46px;
+    top : 2px;
+    left : 0;
+}
+#menuPageBookStoreLogo4{
+    width : 124px;
+    height: 18px;
+    position : absolute;
+    top : 16px;
+    left : 0;
+}
+#menuPageBookStoreLogo5{
+    width : 100px;
+    height: 20px;
+    position : absolute;
+    left : 5px;
+    top : 15px;
+}
+.menuPageBookStoreShortcuts{
+    width : 20px;
+    height: 20px;
+    position : absolute;
+    top : 15px;
+    right : 0;
+}
+/* menuPAgeBookStore End */
+
+#menuPageFooter{
+    width : 500px;
+    height: 50px;
+    background-color: lightslategrey;
+    position : relative;
+}
+.menuPageFooterMenu{
+    position : relative;
+    margin-left : 14px;
+    float : left;
+    width : 150px;
+    /* background-color: green; */
+    height: 50px;
+}
+.FooterMenuIcon{
+    width : 30px;
+    height: 30px;
+    float : left;
+    position : absolute;
+    top : 10px;
+    left : 0;
+}
+.footerMenuText{
+    position : absolute;
+    width : 100px;
+    height: 16px;
+    top : 15px;
+    font-size : 16px;
+    left : 35px;
+}
+/* footerMenu End */
